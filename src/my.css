@@ -1,0 +1,9 @@
+/* Put your custom CSS here */
+img.main-image {
+    margin-top: -15px;
+    width: 100%;
+    display: block;
+    background-image: url(img/wood.jpg); 
+    background-repeat: no-repeat;
+
+}
