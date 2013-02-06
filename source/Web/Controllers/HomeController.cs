@@ -8,16 +8,21 @@ namespace Web.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public FileResult Index()
         {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
-
-            return View();
+            return File("index.html", "text/html");
         }
 
         public ActionResult About()
         {
             ViewBag.Message = "Your quintessential app description page.";
+
+            return View();
+        }
+
+        public ActionResult Home()
+        {
+            ViewBag.Message = "Modify me.";
 
             return View();
         }
