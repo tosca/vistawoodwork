@@ -1,6 +1,6 @@
 
-img.main-image {
-    margin-top: 30px;
+.img.main-image {
+    margin: 30px auto 0 auto;
     width: 100%;
     display: block;
     background-image: url(img/woods.png); 
