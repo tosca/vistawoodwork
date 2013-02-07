@@ -23,6 +23,10 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -138,6 +142,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="04-jquery-mobile.html" />
+    <Content Include="code.photoswipe.jquery-3.0.5.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -169,28 +175,34 @@
     <Content Include="Global.asax" />
     <Content Include="img\10.jpg" />
     <Content Include="img\101.jpg" />
-    <Content Include="img\101sq.jpg" />
-    <Content Include="img\102sq.jpg" />
-    <Content Include="img\103.jpg" />
     <Content Include="img\3.jpg" />
-    <Content Include="img\306.jpg" />
-    <Content Include="img\312.jpg" />
-    <Content Include="img\317sq.jpg" />
     <Content Include="img\318.jpg" />
     <Content Include="img\319.jpg" />
     <Content Include="img\331.jpg" />
     <Content Include="img\342.jpg" />
     <Content Include="img\4.jpg" />
-    <Content Include="img\7.jpg" />
-    <Content Include="img\9sq.jpg" />
+    <Content Include="img\kitchen\101.jpg" />
+    <Content Include="img\kitchen\101sq.jpg" />
+    <Content Include="img\kitchen\102sq.jpg" />
+    <Content Include="img\kitchen\103.jpg" />
+    <Content Include="img\kitchen\306.jpg" />
+    <Content Include="img\kitchen\312.jpg" />
+    <Content Include="img\kitchen\317sq.jpg" />
+    <Content Include="img\kitchen\7.jpg" />
+    <Content Include="img\kitchen\9sq.jpg" />
     <Content Include="img\vistaLogo01.png" />
     <Content Include="img\vistaLogo03.png" />
     <Content Include="img\vista_bizcrd02.png" />
     <Content Include="img\woods.jpg" />
     <Content Include="img\woods.png" />
     <Content Include="index.html" />
+    <Content Include="jquery-mobile.css" />
     <Content Include="my.css" />
     <Content Include="my.js" />
+    <Content Include="obj\Debug\Web.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Web.dll" />
+    <Content Include="obj\Debug\Web.pdb" />
+    <Content Include="photoswipe.css" />
     <Content Include="Scripts\jquery-1.6.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.2.js" />
     <Content Include="Scripts\jquery-1.6.2.min.js" />
@@ -206,6 +218,7 @@
     <Content Include="Scripts\knockout-2.0.0.debug.js" />
     <Content Include="Scripts\knockout-2.0.0.js" />
     <Content Include="Scripts\modernizr-2.0.6-development-only.js" />
+    <Content Include="styles.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -243,9 +256,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="img\bath\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\Web.csprojResolveAssemblyReference.cache" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
