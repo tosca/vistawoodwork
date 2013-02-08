@@ -1,8 +1,16 @@
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
 
-.img.main-image {
-    margin: 30px auto 0 auto;
+.detailimage {
     width: 100%;
-    display: block;
-    background-image: url(img/woods.png); 
-    background-repeat: no-repeat;
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.detailimage img {
+    width: 100%;
 }
