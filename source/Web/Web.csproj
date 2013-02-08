@@ -235,9 +235,6 @@
     <Content Include="noutil\code.photoswipe.noutil-3.0.5.min.js" />
     <Content Include="noutil\code.photoswipe.noutil.jquery-3.0.5.js" />
     <Content Include="noutil\code.photoswipe.noutil.jquery-3.0.5.min.js" />
-    <Content Include="obj\Debug\Web.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\Web.dll" />
-    <Content Include="obj\Debug\Web.pdb" />
     <Content Include="packages\AspNetMvc.4.0.20126.16343\lib\net40\System.Web.Mvc.dll" />
     <Content Include="packages\AspNetMvc.4.0.20126.16343\lib\net40\System.Web.Mvc.xml" />
     <Content Include="packages\AspNetRazor.Core.2.0.20126.16343\lib\net40\System.Web.Razor.dll" />
@@ -368,14 +365,9 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="img\bath\" />
-    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <Content Include="obj\Debug\Web.csprojResolveAssemblyReference.cache" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages\AspNetMvc.4.0.20126.16343\AspNetMvc.4.0.20126.16343.nupkg" />
