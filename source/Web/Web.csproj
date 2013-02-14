@@ -181,6 +181,8 @@
     <Content Include="img\331.jpg" />
     <Content Include="img\342.jpg" />
     <Content Include="img\4.jpg" />
+    <Content Include="img\custom\20121213_091548.jpg" />
+    <Content Include="img\door\20121026_130941.jpg" />
     <Content Include="img\kitchen\101.jpg" />
     <Content Include="img\kitchen\101sq.jpg" />
     <Content Include="img\kitchen\102sq.jpg" />
@@ -190,11 +192,16 @@
     <Content Include="img\kitchen\317sq.jpg" />
     <Content Include="img\kitchen\7.jpg" />
     <Content Include="img\kitchen\9sq.jpg" />
+    <Content Include="img\kit\20121022_153124.jpg" />
+    <Content Include="img\kit\20121022_153146.jpg" />
+    <Content Include="img\kit\20121022_153314.jpg" />
+    <Content Include="img\kit\20121022_153332.jpg" />
+    <Content Include="img\kit\20121022_153524.jpg" />
+    <Content Include="img\kit\20121022_160312.jpg" />
+    <Content Include="img\kit\20121023_132233.jpg" />
     <Content Include="img\vistaLogo01.png" />
     <Content Include="img\vistaLogo03.png" />
-    <Content Include="img\vista_bizcrd02.png" />
-    <Content Include="img\woods.jpg" />
-    <Content Include="img\woods.png" />
+    <Content Include="img\vistaLogo13.png" />
     <Content Include="index.html" />
     <Content Include="jquery-mobile.css" />
     <Content Include="lib\klass.min.js" />
@@ -220,6 +227,7 @@
     <Content Include="Scripts\knockout-2.0.0.debug.js" />
     <Content Include="Scripts\knockout-2.0.0.js" />
     <Content Include="Scripts\modernizr-2.0.6-development-only.js" />
+    <Content Include="scroll3.html" />
     <Content Include="styles.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
