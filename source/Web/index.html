@@ -77,7 +77,7 @@
     <body>
         <!-- Home -->
         <div data-theme="d" data-role="page" data-title="VISTA woodworking" id="page1">
-       <div data-role="header" data-theme="e">
+       <div data-role="header" data-theme="c">
            <div class="detailimage"><img src="img/vistaLogo20.png"/><img src="img/distinquish.png" />
            </div>
          <div class="ui-btn-right" data-mini="true">
@@ -86,17 +86,16 @@
         <a href="#Contact" data-role="button" data-corners="false" data-rel="popup">CONTACT</a>
         </div>
 </div>
- <div data-role="content" class="type-interior" data-theme="e"  >
-            <div class="content-primary">
-                                
-                    <a href="#Gallery1" data-role="button" data-inline="true" data-corners="false" data-theme="e" data-mini="true"><h2>Custom Kitchens</h2><p>Cabinetry built-ins - islands - casing - dining</p><br /><img src="img/thumb/th-kit.png" /></a>
-                    <a href="#Gallery2" data-role="button" data-inline="true" data-corners="false" data-theme="e" data-mini="true"><h2>Elegant Bathrooms</h2><p>Vanities - Custom cabinetry - showers</p><br /><img src="img/thumb/th-bath.png" /></a>
-                    <a href="#Gallery3" data-role="button" data-inline="true" data-corners="false" data-theme="e" data-mini="true"><h2>Designer Doors</h2><p>Elegant Entries - moldings - casings</p><br /><img src="img/thumb/th-door.png" /></a>
-                    <a href="#Gallery4" data-role="button" data-inline="true" data-corners="false" data-theme="e" data-mini="true"><h2>Architectural Millwork</h2><p>Mantels - built-ins - casing - archway - beams</p><br /><img src="img/thumb/th-mill.png" /></a>
-                    <a href="#Gallery5" data-role="button" data-inline="true" data-corners="false" data-theme="e" data-mini="true"><h2>Bars</h2><p>Curved molding </p><br /><img src="img/thumb/th-bar.png" /></a>
-                    <a href="#Gallery6" data-role="button" data-inline="true" data-corners="false" data-theme="e" data-mini="true"><h2>Custom Craftsmanship</h2><p>Entertainment - bars - furniture - tables</p><br /><img src="img/thumb/th-custom.png" /></a>
-    
-             </div><!-- content-primary -->  
+ <div data-role="content" class="type-interior" data-theme="d">
+
+                <ul data-role="listview" data-corners="false">             
+                    <li><a href="#Gallery1"><img src="img/thumb/th-kit.png" alt="Custom Kitchens" /><h2>Custom Kitchens</h2><p>Cabinetry - built-ins - islands - casing - dining</p></a></li>
+                    <li><a href="#Gallery2"><img src="img/thumb/th-bath.png" alt="custom vanities" /><h2>Elegant Bathrooms</h2><p>Vanities - Custom cabinetry - showers</p></a></li>
+                    <li><a href="#Gallery3"> <img src="img/thumb/th-door.png" alt="custom doors" /><h2>Designer Doors</h2><p>Elegant Entries - moldings - casings</p></a></li>
+                    <li><a href="#Gallery4"><img src="img/thumb/th-mill.png" alt="architectural millwork" /><h2>Architectural Millwork</h2><p>Mantels - built-ins - casing - archway - beams</p></a></li>
+                    <li><a href="#Gallery5"><img src="img/thumb/th-bar.png" alt="custom bars"/><h2>Bars</h2><p>Curved molding </p></a></li>
+                    <li><a href="#Gallery6"><img src="img/thumb/th-custom.png" alt="custom craftsmanshiip" /><h2>Custom Craftsmanship</h2><p>Entertainment - bars - furniture - tables</p></a></li>
+               </ul>  
  
        <div data-role="popup" data-theme="e" data-mini="true" id="About"><p>This is where info ABOUT Vista would go.<p></div>
           <div data-role="popup" data-theme="e" data-mini="true" id="Contact">
@@ -108,11 +107,11 @@
             <h3>Message with a BUTTON for Send</h3><br />
          </div> 
 </div><!-- content -->
-<div data-role="footer" data-theme="e">
+<div data-role="footer" data-theme="c">
 		<h4>VISTA WODOWORKING LLC</h4>
 </div> 	
         </div><!-- page1 -->
-<div data-role="page" data-add-back-btn="true" class="gallery-page" id="Gallery1" >
+<div data-role="page" data-add-back-btn="true" data-theme="a" class="gallery-page" id="Gallery1" >
 
 	<div data-role="header" >
 		<h1>White Marble and Kitchen Cabinetry</h1>
@@ -136,7 +135,7 @@
 	</div> 
 
 </div>
- <div data-role="page" data-add-back-btn="true" class="gallery-page"id="Gallery2">
+ <div data-role="page" data-add-back-btn="true" data-theme="a" class="gallery-page"id="Gallery2">
 	<div data-role="header">
 		<h1>Bathroom Vanities</h1>
 	</div>
@@ -161,7 +160,7 @@
 </div> 	
 </div>
 
- <div data-role="page" data-add-back-btn="true" class="gallery-page"id="Gallery3">
+ <div data-role="page" data-add-back-btn="true" data-theme="a" class="gallery-page"id="Gallery3">
 	<div data-role="header">
 		<h1>Custom Doors</h1>
 	</div>
@@ -177,7 +176,7 @@
 </div> 	
 </div>
 
-         <div data-role="page" data-add-back-btn="true" class="gallery-page"id="Gallery4">
+         <div data-role="page" data-add-back-btn="true" data-theme="a" class="gallery-page"id="Gallery4">
 	<div data-role="header">
 		<h1>Architectural Millwork</h1>
 	</div>
@@ -217,7 +216,7 @@
 </div> 	
 </div>
 
-         <div data-role="page" data-add-back-btn="true" class="gallery-page"id="Gallery5">
+         <div data-role="page" data-add-back-btn="true" data-theme="a" class="gallery-page"id="Gallery5">
 	<div data-role="header">
 		<h1>Bars</h1>
 	</div>
@@ -233,7 +232,7 @@
 </div> 	
 </div>
 
-                <div data-role="page" data-add-back-btn="true" class="gallery-page"id="Gallery6">
+                <div data-role="page" data-add-back-btn="true" data-theme="a" class="gallery-page"id="Gallery6">
 	<div data-role="header">
 		<h1>Custom Carpentry</h1>
 	</div>

@@ -6,7 +6,6 @@
 
 .detailimage {
     width: 100%;
-    text-align: center;
     margin-right: 0;
     margin-left: 0;
 }
@@ -15,36 +14,18 @@
     width: auto;
     height:auto;
 }
-.type-interior .content-primary a {
-    margin: 1%;
-    padding: 1.5em;
+.ui-li-thumb, .ui-listview .ui-li-icon {
+    left: 20px;
+    max-height: 233px;
+    max-width: 340px;
+    top: 0;
+    position:absolute;
 }
-.content-primary a img {
-    box-shadow:inset;
 
+.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb {
+    min-height: 233px;   
 }
-.content-primary {
-    float: right;
-    margin-right: 1%;
-    margin-top: 30px;
-    padding-right: 1%;
-    width: 90%;
-}
-.type-interior .content-secondary {
-    margin: 0;
-    padding: 1.5em 0 3em 5%;
-}
-.content-secondary {
-    display: inline-block;
-    height: 1px;
-    position: absolute;
-     margin-top: 20px;
-    left: 0;
-    top: 180px;
-     margin-left: 1%;
-    width: 10%;
-}
-.content-primary ul li {
-    margin: .5em 0;
-    padding: 0;
+.ui-li-heading, .ui-li-desc{
+    margin: 0.9em 0 0 18em;
+    margin-left:310px;
 }
