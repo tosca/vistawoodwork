@@ -77,36 +77,41 @@
     <body>
         <!-- Home -->
         <div data-theme="d" data-role="page" data-title="VISTA woodworking" id="page1">
-       <div class="detailimage"> <img src="img/vistaBizcrdlogo21.png" style="width:auto; height:auto"/><img src="img/distinquish.png" /></div>
-            <div data-role="header" style="height:5px">
-                <div class="detailimage"></div>
-                    <a data-role="button" class="ui-btn-right">
-                         Design
-                    </a>
-            </div>
- <div class="type-interior">
-            <div data-role="content" class="content-primary">
-                
-                <div data-role="controlgroup" >
-                   
-            	<ul data-role="listview" style="margin:5px 10px" data-inset="true">
-                    <li><a href="#Gallery1"><img src="img/kit/vista_sq01.png" /><h3>Custom Kitchens</h3><p>Cabinetry built-ins, islands, casing, dining</p></a></li>
-                    <li><a href="#Gallery2"><img src="img/bath/DSC03617.jpg" /><h3>Elegant Bathrooms</h3><p>Vanities, Custom cabinets, showers</p></a></li>
-                    <li><a href="#Gallery3"><img src="img/door/20121026_130941.jpg" /><h3>Designer Doors</h3><p>Elegant Entries, moldings, casings</p></a></li>
-                    <li><a href="#Gallery4"><img src="img/millwork/DSC03739.jpg" /><h3>Architectural Millwork</h3><p>staircasings, arches, moldings, casings, mantels</p></a></li>
-                    <li><a href="#Gallery5"><img src="img/door/20121026_130941.jpg" /><h3>Bars</h3><p>Curved molding </p></a></li>
-                    <li><a href="#Gallery6"><img src="img/door/20121026_130941.jpg" /><h3>Custom Carpentry</h3><p>Entertainment Centers, Headboards, Dressers, Consols, tables, Benches</p></a></li>
-                
-                </ul>
-                </div> 
-           
-                 </div>  
-    <div class="content-secondary">
-        <img src="img/scrolllft.png" />
-    </div> 
+       <div data-role="header" data-theme="e">
+           <div class="detailimage"><img src="img/vistaBizcrdlogo21.png"/><img src="img/distinquish.png" />
+           </div>
+         <div class="ui-btn-right" data-mini="true">
+           <a data-role="button" data-corners="false" >DESIGNERS</a>
+         <a href="#About" data-role="button" data-corners="false" data-rel="popup">ABOUT</a>
+        <a href="#Contact" data-role="button" data-corners="false" data-rel="popup">CONTACT</a>
         </div>
+</div>
+ <div data-role="content" class="type-interior" data-theme="e"  >
+            <div class="content-primary">
+                                
+                    <a href="#Gallery1" data-role="button" data-inline="true" data-corners="false" data-theme="e" data-mini="true"><h2>Custom Kitchens</h2><p>Cabinetry built-ins - islands - casing - dining</p><br /><img src="img/kit/vista_sq01.png" /></a>
+                    <a href="#Gallery2" data-role="button" data-inline="true" data-corners="false" data-theme="e" data-mini="true"><h2>Elegant Bathrooms</h2><p>Vanities - Custom cabinetry - showers</p><br /><img src="img/kit/vista_sq01.png" /></a>
+                    <a href="#Gallery3" data-role="button" data-inline="true" data-corners="false" data-theme="e" data-mini="true"><h2>Designer Doors</h2><p>Elegant Entries - moldings - casings</p><br /><img src="img/10.jpg" /></a>
+                    <a href="#Gallery4" data-role="button" data-inline="true" data-corners="false" data-theme="e" data-mini="true"><h2>Architectural Millwork</h2><p>Mantels - built-ins - casing - archway - beams</p><br /><img src="img/kit/vista_sq01.png" /></a>
+                    <a href="#Gallery5" data-role="button" data-inline="true" data-corners="false" data-theme="e" data-mini="true"><h2>Bars</h2><p>Curved molding </p><br /><img src="img/kit/vista_sq01.png" /></a>
+                    <a href="#Gallery6" data-role="button" data-inline="true" data-corners="false" data-theme="e" data-mini="true"><h2>Custom Craftsmanship</h2><p>Entertainment - bars - furniture - tables</p><br /><img src="img/kit/vista_sq01.png" /></a>
+    
+             </div><!-- content-primary -->  
+    <div class="content-secondary"> 
+      artwork
+    </div> 
+       <div data-role="popup" data-theme="e" data-mini="true" id="About"><p>This is where info ABOUT Vista would go.<p></div>
+          <div data-role="popup" data-theme="e" data-mini="true" id="Contact">
+	        <h3>CONTACT</h3><br />
+            <h3>address here with map popoup BUTTON link</h3><br />
+            <h3>Phone 630-800-6343 || Steve Quattrochi with a BUTTON to call directly</h3>    
+            <h3>Name</h3><br />
+            <h3>eMAIL</h3><br />
+            <h3>Message with a BUTTON for Send</h3><br />
+         </div> 
+</div><!-- content -->
 
-        </div><!-- type-interior -->
+        </div><!-- page1 -->
 <div data-role="page" data-add-back-btn="true" class="gallery-page" id="Gallery1" >
 
 	<div data-role="header" >

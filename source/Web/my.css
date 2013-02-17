@@ -15,16 +15,20 @@
     width: auto;
     height:auto;
 }
-.type-interior .content-primary {
-    margin: 0;
-    padding: 1.5em 5% 3em 0;
+.type-interior .content-primary a {
+    margin: 1%;
+    padding: 1.5em;
+}
+.content-primary a img {
+    box-shadow:inset;
+
 }
 .content-primary {
     float: right;
     margin-right: 1%;
     margin-top: 30px;
     padding-right: 1%;
-    width: 60%;
+    width: 90%;
 }
 .type-interior .content-secondary {
     margin: 0;
@@ -34,10 +38,13 @@
     display: inline-block;
     height: 1px;
     position: absolute;
-     margin-top: 30px;
+     margin-top: 20px;
     left: 0;
-    top: 300px;
+    top: 200px;
      margin-left: 1%;
-    margin-top: 30px;
-    width: 34%;
+    width: 10%;
+}
+.content-primary ul li {
+    margin: .5em 0;
+    padding: 0;
 }
