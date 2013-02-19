@@ -143,7 +143,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="04-jquery-mobile.html" />
-    <Content Include="code.photoswipe.jquery-3.0.5.js" />
+    <Content Include="assets\error.gif" />
+    <Content Include="assets\icons%402x.png" />
+    <Content Include="assets\icons.png" />
+    <Content Include="assets\loader.gif" />
+    <Content Include="assets\photoswipe.css" />
+    <Content Include="index.html" />
+    <Content Include="img\distinquish02.png" />
+    <Content Include="img\vistaLogoweb21.png" />
+    <Content Include="lib\cache.class.js" />
+    <Content Include="lib\cache.js" />
+    <Content Include="lib\carousel.class.animation.js" />
+    <Content Include="lib\carousel.class.js" />
+    <Content Include="lib\carousel.js" />
+    <Content Include="lib\code.photoswipe.jquery-3.0.5.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -283,16 +296,45 @@
     <Content Include="img\vistaheader11.png" />
     <Content Include="img\vistaLogo13.png" />
     <Content Include="img\vistaLogo20.png" />
-    <Content Include="index.html" />
-    <Content Include="jquery-mobile.css" />
+    <Content Include="oldindex.html" />
+    <Content Include="css\jquery-mobile.css" />
+    <Content Include="lib\code.util-1.0.6\code.util-1.0.6.js" />
+    <Content Include="lib\code.util-1.0.6\code.util-1.0.6.min.js" />
+    <Content Include="lib\code.util-1.0.6\code.util.jquery-1.0.6.js" />
+    <Content Include="lib\code.util-1.0.6\code.util.jquery-1.0.6.min.js" />
+    <Content Include="lib\code.util-1.0.6\MIT-license.txt" />
+    <Content Include="lib\code.util-1.0.6\src\animation.js" />
+    <Content Include="lib\code.util-1.0.6\src\base.class.js" />
+    <Content Include="lib\code.util-1.0.6\src\browser.js" />
+    <Content Include="lib\code.util-1.0.6\src\dom.jquery.js" />
+    <Content Include="lib\code.util-1.0.6\src\dom.js" />
+    <Content Include="lib\code.util-1.0.6\src\events.jquery.js" />
+    <Content Include="lib\code.util-1.0.6\src\events.js" />
+    <Content Include="lib\code.util-1.0.6\src\form.js" />
+    <Content Include="lib\code.util-1.0.6\src\touchelement.class.js" />
+    <Content Include="lib\code.util-1.0.6\src\touchelement.js" />
+    <Content Include="lib\code.util-1.0.6\src\util.js" />
+    <Content Include="lib\documentoverlay.class.js" />
+    <Content Include="lib\documentoverlay.js" />
+    <Content Include="lib\image.class.js" />
+    <Content Include="lib\image.js" />
     <Content Include="lib\klass.min.js" />
-    <Content Include="my.css" />
-    <Content Include="my.js" />
+    <Content Include="css\my.css" />
+    <Content Include="lib\my.js" />
+    <Content Include="lib\photoswipe.class.js" />
+    <Content Include="lib\photoswipe.js" />
+    <Content Include="lib\toolbar.class.js" />
+    <Content Include="lib\toolbar.js" />
+    <Content Include="lib\uilayer.class.js" />
+    <Content Include="lib\uilayer.js" />
+    <Content Include="lib\version.header.txt" />
+    <Content Include="lib\zoompanrotate.class.js" />
+    <Content Include="lib\zoompanrotate.js" />
     <Content Include="noutil\code.photoswipe.noutil-3.0.5.js" />
     <Content Include="noutil\code.photoswipe.noutil-3.0.5.min.js" />
     <Content Include="noutil\code.photoswipe.noutil.jquery-3.0.5.js" />
     <Content Include="noutil\code.photoswipe.noutil.jquery-3.0.5.min.js" />
-    <Content Include="photoswipe.css" />
+    <Content Include="css\photoswipe.css" />
     <Content Include="Scripts\jquery-1.6.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.2.js" />
     <Content Include="Scripts\jquery-1.6.2.min.js" />
@@ -308,8 +350,7 @@
     <Content Include="Scripts\knockout-2.0.0.debug.js" />
     <Content Include="Scripts\knockout-2.0.0.js" />
     <Content Include="Scripts\modernizr-2.0.6-development-only.js" />
-    <Content Include="scroll3.html" />
-    <Content Include="styles.css" />
+    <Content Include="css\styles.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -353,6 +394,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\thumb\thunbsz.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\change.log" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

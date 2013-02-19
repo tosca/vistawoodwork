@@ -8,84 +8,258 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
-        <link href="jquery-mobile.css" type="text/css" rel="stylesheet" />
-	<link href="photoswipe.css" type="text/css" rel="stylesheet" />
-        <link rel="stylesheet" href="my.css" />
-       <script type="text/javascript" src="lib/klass.min.js"></script> 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+        <link rel="stylesheet" type="text/css" href="css/jquery-mobile.css"   />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="assets/photoswipe.css"   />
+        <link rel="stylesheet" type="text/css" href="css/my.css" />
+        <!--
+	<script src="http://192.168.0.98:8888/target/target-script-min.js#anonymous"></script>
+	-->
+    <script type="text/javascript" src="lib/klass.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="lib/code.util-1.0.6/code.util.jquery-1.0.6.js"></script>
+   <!-- <script type="text/javascript" src="lib/code.photoswipe.jquery-3.0.5.js"></script>--> 
+    <script type="text/javascript" src="lib/image.js"></script>
+	<script type="text/javascript" src="lib/image.class.js"></script>
+	<script type="text/javascript" src="lib/cache.js"></script>
+	<script type="text/javascript" src="lib/cache.class.js"></script>
+	<script type="text/javascript" src="lib/documentoverlay.js"></script>
+	<script type="text/javascript" src="lib/documentoverlay.class.js"></script>
+	<script type="text/javascript" src="lib/carousel.js"></script>
+	<script type="text/javascript" src="lib/carousel.class.js"></script>
+	<script type="text/javascript" src="lib/carousel.class.animation.js"></script>
+	<script type="text/javascript" src="lib/toolbar.js"></script>
+	<script type="text/javascript" src="lib/toolbar.class.js"></script>
+	<script type="text/javascript" src="lib/uilayer.js"></script>
+	<script type="text/javascript" src="lib/uilayer.class.js"></script>
+	<script type="text/javascript" src="lib/zoompanrotate.js"></script>
+	<script type="text/javascript" src="lib/zoompanrotate.class.js"></script>
+	<script type="text/javascript" src="lib/photoswipe.js"></script>
+	<script type="text/javascript" src="lib/photoswipe.class.js"></script>
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
         </script>
         <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.js">
         </script>
-        <script type="text/javascript" src="code.photoswipe.jquery-3.0.5.min.js"></script>
-        <script src="my.js">
+        <script src="lib/my.js">
         </script>
        
 <script type="text/javascript">
-		/*
-		 * IMPORTANT!!!
-		 * REMEMBER TO ADD  rel="external"  to your anchor tags. 
-		 * If you don't this will mess with how jQuery Mobile works
-		 */
-		
-		(function(window, $, PhotoSwipe){
-			
-			$(document).ready(function(){
-				
-				$('div.gallery-page')
-					.live('pageshow', function(e){
-						
-						var 
-							currentPage = $(e.target),
-							options = {},
-							photoSwipeInstance = $("ul.gallery a", e.target).photoSwipe(options,  currentPage.attr('id'));
-							
-						return true;
-						
-					})
-					
-					.live('pagehide', function(e){
-						
-						var 
-							currentPage = $(e.target),
-							photoSwipeInstance = PhotoSwipe.getInstance(currentPage.attr('id'));
 
-						if (typeof photoSwipeInstance != "undefined" && photoSwipeInstance != null) {
-							PhotoSwipe.detatch(photoSwipeInstance);
-						}
-						
-						return true;
-						
-					});
-				
-			});
-		
-		}(window, window.jQuery, window.Code.PhotoSwipe));
-		
+    /* 
+        Overview: 
+        ---------
+        
+        This is a debug version loading all int individual class files. 
+        It will not run from the released "examples" folder. It needs to be run from
+        "/src/examples/debug.html"
+    
+    */
+
+    // Here we are using the "Code.PhotoSwipe.Util.Events.domReady" function
+    // to set the DOM ready event handler.
+    // You could quite easily use $(document).ready() or document.addEventListener
+    // as Code.PhotoSwipe.Util.Events.domReady is just a warpper for these
+
+    (function (window, Util, PhotoSwipe) {
+
+        Util.Events.domReady(function (e) {
+
+            var
+                addEventListeners = false,
+                instance;
+
+            instance = PhotoSwipe.attach(Util.DOM.find('#Gallery a'), {
+
+                // General
+                fadeInSpeed: 250,
+                fadeOutSpeed: 250,
+                preventHide: false,
+                preventSlideshow: false,
+                zIndex: 1000,
+                backButtonHideEnabled: true,
+                enableKeyboard: true,
+                enableMouseWheel: true,
+                invertMouseWheel: false,
+                mouseWheelSpeed: 500,
+                autoStartSlideshow: false,
+                jQueryMobile: (!Util.isNothing(window.jQuery) && !Util.isNothing(window.jQuery.mobile)),
+                jQueryMobileDialogHash: '&ui-state=dialog',
+                enableUIWebViewRepositionTimeout: true,
+
+
+                // Carousel
+                loop: true,
+                slideSpeed: 250,
+                nextPreviousSlideSpeed: 0,
+                enableDrag: true,
+                swipeThreshold: 50,
+                swipeTimeThreshold: 250,
+                slideTimingFunction: 'ease-out',
+                slideshowDelay: 3000,
+                doubleTapSpeed: 250,
+                margin: 20,
+                imageScaleMethod: 'fit', // Either "fit", "fitNoUpscale" or "zoom",
+
+                // Toolbar
+                captionAndToolbarHide: false,
+                captionAndToolbarFlipPosition: false,
+                captionAndToolbarAlwaysVisible: true,
+                captionAndToolbarAutoHideDelay: 5000,
+                captionAndToolbarOpacity: 0.8,
+                captionAndToolbarShowEmptyCaptions: true,
+                getToolbar: PhotoSwipe.Toolbar.getToolbar,
+
+
+                // ZoomPanRotate
+                allowUserZoom: true,
+                allowRotationOnUserZoom: false,
+                maxUserZoom: 5.0,
+                minUserZoom: 0.5,
+                doubleTapZoomLevel: 2.5,
+
+
+                // Cache
+                getImageSource: PhotoSwipe.Cache.Functions.getImageSource,
+                getImageCaption: PhotoSwipe.Cache.Functions.getImageCaption,
+                getImageMetaData: PhotoSwipe.Cache.Functions.getImageMetaData,
+                cacheMode: PhotoSwipe.Cache.Mode.normal
+
+            });
+
+
+            if (addEventListeners) {
+
+                // onBeforeShow
+                instance.addEventHandler(PhotoSwipe.EventTypes.onBeforeShow, function (e) {
+                    console.log('onBeforeShow');
+                });
+
+                // onShow
+                instance.addEventHandler(PhotoSwipe.EventTypes.onShow, function (e) {
+                    console.log('onShow');
+                });
+
+                // onBeforeHide
+                instance.addEventHandler(PhotoSwipe.EventTypes.onBeforeHide, function (e) {
+                    console.log('onBeforeHide');
+                });
+
+                // onHide
+                instance.addEventHandler(PhotoSwipe.EventTypes.onHide, function (e) {
+                    console.log('onHide');
+                });
+
+                // onDisplayImage
+                instance.addEventHandler(PhotoSwipe.EventTypes.onDisplayImage, function (e) {
+                    console.log('onDisplayImage{');
+                    console.log('onDisplayImage - e.action = ' + e.action);
+                    console.log('onDisplayImage - e.index = ' + e.index);
+                    console.log(instance.getCurrentImage());
+                    console.log('onDisplayImage}');
+                });
+
+                // onResetPosition
+                instance.addEventHandler(PhotoSwipe.EventTypes.onResetPosition, function (e) {
+                    console.log('onResetPosition');
+                });
+
+                // onSlideshowStart
+                instance.addEventHandler(PhotoSwipe.EventTypes.onSlideshowStart, function (e) {
+                    console.log('onSlideshowStart');
+                });
+
+                // onSlideshowStop
+                instance.addEventHandler(PhotoSwipe.EventTypes.onSlideshowStop, function (e) {
+                    console.log('onSlideshowStop');
+                });
+
+                // onTouch
+                instance.addEventHandler(PhotoSwipe.EventTypes.onTouch, function (e) {
+                    console.log('onTouch{');
+                    console.log('onTouch - e.action = ' + e.action);
+                    console.log('onTouch - e.point = ');
+                    console.log(e.point);
+                    console.log('onTouch}');
+                });
+
+                // onBeforeCaptionAndToolbarShow
+                instance.addEventHandler(PhotoSwipe.EventTypes.onBeforeCaptionAndToolbarShow, function (e) {
+                    console.log('onBeforeCaptionAndToolbarShow');
+                });
+
+                // onCaptionAndToolbarShow
+                instance.addEventHandler(PhotoSwipe.EventTypes.onCaptionAndToolbarShow, function (e) {
+                    console.log('onCaptionAndToolbarShow');
+                });
+
+                // onBeforeCaptionAndToolbarHide
+                instance.addEventHandler(PhotoSwipe.EventTypes.onBeforeCaptionAndToolbarHide, function (e) {
+                    console.log('onBeforeCaptionAndToolbarHide');
+                });
+
+                // onCaptionAndToolbarHide
+                instance.addEventHandler(PhotoSwipe.EventTypes.onCaptionAndToolbarHide, function (e) {
+                    console.log('onCaptionAndToolbarHide');
+                });
+
+                // onToolbarTap
+                instance.addEventHandler(PhotoSwipe.EventTypes.onToolbarTap, function (e) {
+                    console.log('onToolbarTap');
+                    console.log(e);
+                });
+
+                // onBeforeZoomPanRotateShow
+                instance.addEventHandler(PhotoSwipe.EventTypes.onBeforeZoomPanRotateShow, function (e) {
+                    console.log('onBeforeZoomPanRotateShow');
+                });
+
+                // onZoomPanRotateShow
+                instance.addEventHandler(PhotoSwipe.EventTypes.onZoomPanRotateShow, function (e) {
+                    console.log('onZoomPanRotateShow');
+                });
+
+                // onBeforeZoomPanRotateHide
+                instance.addEventHandler(PhotoSwipe.EventTypes.onBeforeZoomPanRotateHide, function (e) {
+                    console.log('onBeforeZoomPanRotateHide');
+                });
+
+                // onZoomPanRotateHide
+                instance.addEventHandler(PhotoSwipe.EventTypes.onZoomPanRotateHide, function (e) {
+                    console.log('onZoomPanRotateHide');
+                });
+
+                // onZoomPanRotateTransform
+                instance.addEventHandler(PhotoSwipe.EventTypes.onZoomPanRotateTransform, function (e) {
+                    console.log('onZoomPanRotateTransform');
+                    console.log(e);
+                });
+
+            }
+
+
+        });
+
+
+    }(window, window.Code.Util, window.Code.PhotoSwipe));
+
 	</script>
-        <script>
-            try {
+	
 
-    $(function() {
-
-    });
-
-  } catch (error) {
-    console.error("Your javascript has an error: " + error);
-  }
-        </script>
     </head>
     <body>
         <!-- Home -->
         <div data-theme="d" data-role="page" data-title="VISTA woodworking" id="page1">
        <div data-role="header" data-theme="c">
-           <div class="detailimage"><img src="img/vistaLogo20.png"/><img src="img/distinquish.png" />
-           </div>
-         <div class="ui-btn-right" data-mini="true">
-          <br /> <a data-role="button" data-corners="false" >DESIGNERS</a>
-         <a href="#About" data-role="button" data-corners="false" data-rel="popup">ABOUT</a>
-        <a href="#Contact" data-role="button" data-corners="false" data-rel="popup">CONTACT</a>
+       <div class="detailimage"><img src="img/vistaLogoweb21.png"/><img src="img/distinquish02.png" />       
+       <div class="ui-btn-right" data-mini="true" >
+            <a data-role="button" data-corners="false">DESIGNERS</a>
+            <a href="#About" data-role="button" data-corners="false" data-rel="popup">ABOUT</a>
+            <a href="#Contact" data-role="button" data-corners="false" data-rel="popup">CONTACT</a>
         </div>
-</div>
+
+       </div>
+        </div>
  <div data-role="content" class="type-interior" data-theme="d">
 
                 <ul data-role="listview" data-corners="false">             
@@ -97,24 +271,24 @@
                     <li><a href="#Gallery6"><img src="img/thumb/th-custom.png" alt="custom craftsmanshiip" /><h2>Custom Craftsmanship</h2><p>Entertainment - bars - furniture - tables</p></a></li>
                </ul>  
  
-       <div data-role="popup" data-theme="e" data-mini="true" id="About"><p>This is where info ABOUT Vista would go.<p></div>
-          <div data-role="popup" data-theme="e" data-mini="true" id="Contact">
-	        <h3>CONTACT</h3><br />
-            <h3>address here with map popoup BUTTON link</h3><br />
+       <div data-role="popup" data-theme="d" data-mini="true" id="About"><p>This is where info ABOUT Vista would go.<p></div>
+          <div data-role="popup" data-theme="d" data-mini="true" id="Contact">
+	        <h3>CONTACT</h3>
+            <h3>address here with map popoup BUTTON link</h3>
             <h3>Phone 630-800-6343 || Steve Quattrochi with a BUTTON to call directly</h3>    
             <h3>Name</h3><br />
             <h3>eMAIL</h3><br />
             <h3>Message with a BUTTON for Send</h3><br />
          </div> 
 </div><!-- content -->
-<div data-role="footer" data-theme="c">
+<div data-role="footer" data-theme="d">
 		<h4>VISTA WOODWORKING LLC</h4>
 </div> 	
         </div><!-- page1 -->
 <div data-role="page" data-add-back-btn="true" data-theme="d" class="gallery-page" id="Gallery1" >
 
 	<div data-role="header" >
-		<h1>White Marble and Kitchen Cabinetry</h1>
+		<h1>Kitchen Cabinetry, Islands, Pantries, Built-ins, Casing, Dining</h1>
 	</div>
 
 	<div data-role="content">	
@@ -130,14 +304,14 @@
           	
 		</ul>
 </div>
-   <div data-role="footer">
+   <div data-role="footer" data-theme="d">
 		<h4>VISTA WOODWORKING LLC</h4>
 	</div> 
 
 </div>
- <div data-role="page" data-add-back-btn="true" data-theme="a" class="gallery-page"id="Gallery2">
+ <div data-role="page" data-add-back-btn="true" data-theme="d" class="gallery-page"id="Gallery2">
 	<div data-role="header">
-		<h1>Bathroom Vanities</h1>
+		<h1>Bathroom Vanities, Closets, Showers, Storage</h1>
 	</div>
 	<div data-role="content">	
 		
@@ -155,14 +329,14 @@
 		
         </ul>
 </div>
-<div data-role="footer">
+<div data-role="footer" data-theme="d">
 		<h4>VISTA WOODWORKING LLC</h4>
 </div> 	
 </div>
 
- <div data-role="page" data-add-back-btn="true" data-theme="c" class="gallery-page"id="Gallery3">
+ <div data-role="page" data-add-back-btn="true" data-theme="d" class="gallery-page"id="Gallery3">
 	<div data-role="header">
-		<h1>Custom Doors</h1>
+		<h1>Custom Doors and Entry Casing</h1>
 	</div>
 	<div data-role="content">	
 		
@@ -171,12 +345,12 @@
 			 <li><a href="img/door/20121026_130941.jpg" rel="external"><img src="img/door/20121026_130941.jpg" alt="Vista Door_01" /></a></li>
 		</ul>
 </div>
-<div data-role="footer">
+<div data-role="footer" data-theme="d">
 		<h4>VISTA WOODWORKING LLC</h4>
 </div> 	
 </div>
 
-         <div data-role="page" data-add-back-btn="true" data-theme="a" class="gallery-page"id="Gallery4">
+         <div data-role="page" data-add-back-btn="true" data-theme="d" class="gallery-page"id="Gallery4">
 	<div data-role="header">
 		<h1>Architectural Millwork</h1>
 	</div>
@@ -211,14 +385,14 @@
         
         </ul>
 </div>
-<div data-role="footer">
+<div data-role="footer" data-theme="d">
 		<h4>VISTA WODWORKING LLC</h4>
 </div> 	
 </div>
 
-         <div data-role="page" data-add-back-btn="true" data-theme="b" class="gallery-page"id="Gallery5">
+         <div data-role="page" data-add-back-btn="true" data-theme="d" class="gallery-page"id="Gallery5">
 	<div data-role="header">
-		<h1>Bars</h1>
+		<h1>Bars and Entertainment</h1>
 	</div>
 	<div data-role="content">	
 		
@@ -227,14 +401,14 @@
 			 <li><a href="img/door/20121026_130941.jpg" rel="external"><img src="img/door/20121026_130941.jpg" alt="Vista Door_01" /></a></li>
 		</ul>
 </div>
-<div data-role="footer">
+<div data-role="footer" data-theme="d">
 		<h4>VISTA WOODWORKING LLC</h4>
 </div> 	
 </div>
 
-                <div data-role="page" data-add-back-btn="true" data-theme="a" class="gallery-page"id="Gallery6">
+                <div data-role="page" data-add-back-btn="true" data-theme="d" class="gallery-page"id="Gallery6">
 	<div data-role="header">
-		<h1>Custom Carpentry</h1>
+		<h1>Custom Carpentry and Furniture</h1>
 	</div>
 	<div data-role="content">	
 		
@@ -243,7 +417,7 @@
 			 <li><a href="img/door/20121026_130941.jpg" rel="external"><img src="img/door/20121026_130941.jpg" alt="Vista Door_01" /></a></li>
 		</ul>
 </div>
-<div data-role="footer">
+<div data-role="footer" data-theme="d">
 		<h4>VISTA WOODWORKING LLC</h4>
 </div> 	
 </div>
