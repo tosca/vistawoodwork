@@ -353,7 +353,7 @@
     <Content Include="img\vistaLogo13.png" />
     <Content Include="img\vistaLogo20.png" />
     <Content Include="oldindex.html" />
-    <Content Include="css\jquery-mobile.css" />
+    <Content Include="jquery-mobile.css" />
     <Content Include="lib\code.util-1.0.6\code.util-1.0.6.js" />
     <Content Include="lib\code.util-1.0.6\code.util-1.0.6.min.js" />
     <Content Include="lib\code.util-1.0.6\code.util.jquery-1.0.6.js" />
@@ -375,7 +375,7 @@
     <Content Include="lib\image.class.js" />
     <Content Include="lib\image.js" />
     <Content Include="lib\klass.min.js" />
-    <Content Include="css\my.css" />
+    <Content Include="my.css" />
     <Content Include="lib\my.js" />
     <Content Include="lib\photoswipe.class.js" />
     <Content Include="lib\photoswipe.js" />
@@ -390,7 +390,7 @@
     <Content Include="noutil\code.photoswipe.noutil-3.0.5.min.js" />
     <Content Include="noutil\code.photoswipe.noutil.jquery-3.0.5.js" />
     <Content Include="noutil\code.photoswipe.noutil.jquery-3.0.5.min.js" />
-    <Content Include="css\photoswipe.css" />
+    <Content Include="fonts\photoswipe.css" />
     <Content Include="photoswipe.css" />
     <Content Include="Scripts\jquery-1.6.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.2.js" />
@@ -407,7 +407,8 @@
     <Content Include="Scripts\knockout-2.0.0.debug.js" />
     <Content Include="Scripts\knockout-2.0.0.js" />
     <Content Include="Scripts\modernizr-2.0.6-development-only.js" />
-    <Content Include="css\styles.css" />
+    <Content Include="fonts\styles.css" />
+    <Content Include="styles.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -460,6 +461,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\Cicle Fina Italic_0.ttf" />
+    <Content Include="fonts\Cicle Fina_0.ttf" />
+    <Content Include="fonts\Cicle Gordita Italic_0.ttf" />
+    <Content Include="fonts\Cicle Gordita_0.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\PRISTINA_1.TTF" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

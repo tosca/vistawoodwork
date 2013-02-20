@@ -3,105 +3,28 @@
     <head>
    	 <title>VISTA Woodworking || Custom Cabinetry, Doors, and Architectural Millwork for Chicago Homes</title>
      	<meta name="author" content="www.toscatech.net" />
-        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-       
-        
-       <link href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" rel="stylesheet" /> 
-        <!-- <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.css" />-->
-        <link rel="stylesheet" type="text/css" href="css/jquery-mobile.css"   />
-        <!--<link rel="stylesheet" type="text/css" href="css/style.css" />-->
-        <link rel="stylesheet" type="text/css" href="photoswipe.css"   />
-       <!-- <link rel="stylesheet" type="text/css" href="css/my.css" />-->
-        <!--<script src="http://192.168.0.98:8888/target/target-script-min.js#anonymous"></script>-->
-    
-    <script type="text/javascript" src="lib/klass.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
-    <script type="text/javascript" src="code.photoswipe.jquery-3.0.5.min.js"></script> 
-    <!--<script type="text/javascript" src="lib/code.util-1.0.6/code.util.jquery-1.0.6.js"></script>-->
-      
-   <!-- <script type="text/javascript" src="lib/image.js"></script>
-	<script type="text/javascript" src="lib/image.class.js"></script>
-	<script type="text/javascript" src="lib/cache.js"></script>
-	<script type="text/javascript" src="lib/cache.class.js"></script>
-	<script type="text/javascript" src="lib/documentoverlay.js"></script>
-	<script type="text/javascript" src="lib/documentoverlay.class.js"></script>
-	<script type="text/javascript" src="lib/carousel.js"></script>
-	<script type="text/javascript" src="lib/carousel.class.js"></script>
-	<script type="text/javascript" src="lib/carousel.class.animation.js"></script>
-	<script type="text/javascript" src="lib/toolbar.js"></script>
-	<script type="text/javascript" src="lib/toolbar.class.js"></script>
-	<script type="text/javascript" src="lib/uilayer.js"></script>
-	<script type="text/javascript" src="lib/uilayer.class.js"></script>
-	<script type="text/javascript" src="lib/zoompanrotate.js"></script>
-	<script type="text/javascript" src="lib/zoompanrotate.class.js"></script>
-	<script type="text/javascript" src="lib/photoswipe.js"></script>
-	<script type="text/javascript" src="lib/photoswipe.class.js"></script>-->
 
-      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
-       <!-- <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>-->
-       <!-- <script src="lib/my.js"></script>-->
+       <link href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" rel="stylesheet" /> 
+<!--<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.css" />-->
+        <link rel="stylesheet" type="text/css" href="jquery-mobile.css"   />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+       
+        <link rel="stylesheet" type="text/css" href="photoswipe.css"   />
+  <link rel="stylesheet" type="text/css" href="my.css" />
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+ <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>    
+       <script type="text/javascript" src="lib/klass.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
+        <script type="text/javascript" src="code.photoswipe.jquery-3.0.5.min.js"></script> 
+  
+
+      
        
 <script type="text/javascript">
-
-    /* 
-        Overview: 
-        ---------
-        
-        This is a debug version loading all int individual class files. 
-        It will not run from the released "examples" folder. It needs to be run from
-        "/src/examples/debug.html"
-    
-    */
-
-    // Here we are using the "Code.PhotoSwipe.Util.Events.domReady" function
-    // to set the DOM ready event handler.
-    // You could quite easily use $(document).ready() or document.addEventListener
-    // as Code.PhotoSwipe.Util.Events.domReady is just a warpper for these
-
- 
-		
-         /*
-          * IMPORTANT!!!
-          * REMEMBER TO ADD  rel="external"  to your anchor tags. 
-          * If you don't this will mess with how jQuery Mobile works
-          */
-		
-      /*   (function(window, $, PhotoSwipe){
-			
-             $(document).ready(function(){
-				
-                 $('div.gallery-page')
-                     .live('pageshow', function(e){
-						
-                         var 
-                             currentPage = $(e.target),
-                             options = {},
-                             photoSwipeInstance = $("ul.gallery a", e.target).photoSwipe(options,  currentPage.attr('id'));
-							
-                         return true;
-						
-                     })
-					
-                     .live('pagehide', function(e){
-						
-                         var 
-                             currentPage = $(e.target),
-                             photoSwipeInstance = PhotoSwipe.getInstance(currentPage.attr('id'));
-
-                         if (typeof photoSwipeInstance != "undefined" && photoSwipeInstance != null) {
-                             PhotoSwipe.detatch(photoSwipeInstance);
-                         }
-						
-                         return true;
-						
-                     });
-				
-             });
-		
-         }(window, window.jQuery, window.Code.PhotoSwipe)); */
 
     (function (window, $, PhotoSwipe) {
 
