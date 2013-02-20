@@ -143,11 +143,67 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="04-jquery-mobile.html" />
+    <Content Include="code.photoswipe-3.0.5.js" />
+    <Content Include="code.photoswipe-3.0.5.min.js" />
+    <Content Include="code.photoswipe.jquery-3.0.5.js" />
+    <Content Include="code.photoswipe.jquery-3.0.5.min.js" />
+    <Content Include="error.gif" />
+    <Content Include="icons%402x.png" />
+    <Content Include="icons.png" />
+    <Content Include="images\blogicon.png" />
+    <Content Include="images\codecomputerlovelogo.gif" />
+    <Content Include="images\facebookicon.png" />
+    <Content Include="images\flickricon.png" />
+    <Content Include="images\full\001.jpg" />
+    <Content Include="images\full\002.jpg" />
+    <Content Include="images\full\003.jpg" />
+    <Content Include="images\full\004.jpg" />
+    <Content Include="images\full\005.jpg" />
+    <Content Include="images\full\006.jpg" />
+    <Content Include="images\full\007.jpg" />
+    <Content Include="images\full\008.jpg" />
+    <Content Include="images\full\009.jpg" />
+    <Content Include="images\full\010.jpg" />
+    <Content Include="images\full\011.jpg" />
+    <Content Include="images\full\012.jpg" />
+    <Content Include="images\full\013.jpg" />
+    <Content Include="images\full\014.jpg" />
+    <Content Include="images\full\015.jpg" />
+    <Content Include="images\full\016.jpg" />
+    <Content Include="images\full\017.jpg" />
+    <Content Include="images\full\018.jpg" />
+    <Content Include="images\full\019.jpg" />
+    <Content Include="images\full\020.jpg" />
+    <Content Include="images\thumb\001.jpg" />
+    <Content Include="images\thumb\002.jpg" />
+    <Content Include="images\thumb\003.jpg" />
+    <Content Include="images\thumb\004.jpg" />
+    <Content Include="images\thumb\005.jpg" />
+    <Content Include="images\thumb\006.jpg" />
+    <Content Include="images\thumb\007.jpg" />
+    <Content Include="images\thumb\008.jpg" />
+    <Content Include="images\thumb\009.jpg" />
+    <Content Include="images\thumb\010.jpg" />
+    <Content Include="images\thumb\011.jpg" />
+    <Content Include="images\thumb\012.jpg" />
+    <Content Include="images\thumb\013.jpg" />
+    <Content Include="images\thumb\014.jpg" />
+    <Content Include="images\thumb\015.jpg" />
+    <Content Include="images\thumb\016.jpg" />
+    <Content Include="images\thumb\017.jpg" />
+    <Content Include="images\thumb\018.jpg" />
+    <Content Include="images\thumb\019.jpg" />
+    <Content Include="images\thumb\020.jpg" />
+    <Content Include="images\twittericon.png" />
+    <Content Include="loader.gif" />
+    <Content Include="MIT-license.txt" />
+    <Content Include="old04-jquery-mobile.html" />
     <Content Include="assets\error.gif" />
     <Content Include="assets\icons%402x.png" />
     <Content Include="assets\icons.png" />
     <Content Include="assets\loader.gif" />
     <Content Include="assets\photoswipe.css" />
+    <Content Include="Copy of index.html" />
     <Content Include="index.html" />
     <Content Include="img\distinquish02.png" />
     <Content Include="img\vistaLogoweb21.png" />
@@ -335,6 +391,7 @@
     <Content Include="noutil\code.photoswipe.noutil.jquery-3.0.5.js" />
     <Content Include="noutil\code.photoswipe.noutil.jquery-3.0.5.min.js" />
     <Content Include="css\photoswipe.css" />
+    <Content Include="photoswipe.css" />
     <Content Include="Scripts\jquery-1.6.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.2.js" />
     <Content Include="Scripts\jquery-1.6.2.min.js" />
@@ -361,18 +418,18 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Scripts\AjaxLogin.js" />
-    <Content Include="Images\accent.png" />
-    <Content Include="Images\aspNetHome.png" />
-    <Content Include="Images\bullet.png" />
-    <Content Include="Images\facebook.png" />
-    <Content Include="Images\findHosting.png" />
-    <Content Include="Images\heroAccent.png" />
-    <Content Include="Images\NuGetGallery.png" />
-    <Content Include="Images\orderedListOne.png" />
-    <Content Include="Images\orderedListTwo.png" />
-    <Content Include="Images\orderedListThree.png" />
-    <Content Include="Images\twitter.png" />
-    <Content Include="Images\windowsLive.png" />
+    <Content Include="Images00\accent.png" />
+    <Content Include="Images00\aspNetHome.png" />
+    <Content Include="Images00\bullet.png" />
+    <Content Include="Images00\facebook.png" />
+    <Content Include="Images00\findHosting.png" />
+    <Content Include="Images00\heroAccent.png" />
+    <Content Include="Images00\NuGetGallery.png" />
+    <Content Include="Images00\orderedListOne.png" />
+    <Content Include="Images00\orderedListTwo.png" />
+    <Content Include="Images00\orderedListThree.png" />
+    <Content Include="Images00\twitter.png" />
+    <Content Include="Images00\windowsLive.png" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Account\ChangePassword.cshtml" />
     <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
@@ -397,6 +454,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="lib\change.log" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="change.log" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.md" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
