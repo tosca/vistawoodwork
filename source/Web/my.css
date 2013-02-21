@@ -52,7 +52,10 @@ p {
     white-space: nowrap;
     color:#722b00;
 }
-
+.ui-header .ui-title, .ui-footer .ui-title {
+    text-overflow:initial;
+    font-family: MyFirstFont;
+}
 h2 {
     font-family: MyFancyFont;
 }
@@ -63,9 +66,10 @@ src: url('fonts/Cicle Gordita_0.ttf') format('truetype'),
      url('fonts/Cicle Gordita_0.eot') format('eot'), 
     url('fonts/Cicle Gordita_0.woff') format('woff'),
     url('fonts/Cicle Gordita_0.svg') format('svg');
-    font-weight: normal;
+    font-weight: 800;
     font-style: normal;
-    font-size: medium;
+    font-size: 16px;
+     font-stretch: expanded;
 }
 @font-face
 {
