@@ -6,21 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
 
-  <!--     <link href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" rel="stylesheet" /> -->
+       <link href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" rel="stylesheet" /> 
 <!--<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.css" />-->
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
         <link rel="stylesheet" type="text/css" href="jquery-mobile.css"   />
         <link rel="stylesheet" type="text/css" href="style.css" />
+       
         <link rel="stylesheet" type="text/css" href="photoswipe.css"   />
-        <link rel="stylesheet" type="text/css" href="my.css" />
+  <link rel="stylesheet" type="text/css" href="my.css" />
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
  <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>    
        <script type="text/javascript" src="lib/klass.min.js"></script>
-        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-        <!--<script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>-->
+        <script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
         <script type="text/javascript" src="code.photoswipe.jquery-3.0.5.min.js"></script> 
   
 
@@ -70,28 +68,12 @@
         <!-- Home -->
         <div data-theme="d" data-role="page" data-title="VISTA woodworking" id="page1">
        <div data-role="header" data-theme="c">
-       <div class="detailimage"><img src="img/vistaLogoweb21.png"/><img src="img/distinquish02.png" />
-           
-           <div class="ui-btn-right">
-               <a href="#Designer" data-rel="popup" data-role="button" data-mini="true" data-corners="false">DESIGNERS</a>
-                    <div id="Designer" data-role="popup" data-theme="d" data-overlay-theme="b" data-position-to="window">
-                        <p>for Designers</p>
-                    </div>
-               <a href="#About" data-rel="popup" data-role="button" data-mini="true" data-corners="false">ABOUT</a>
-                    <div id="About" data-role="popup" data-theme="d" data-mini="true" data-overlay-theme="d" data-position-to="window">
-                         <p> This is where info ABOUT Vista would go.<p>
-                     </div>
-               <a href="#Contact" data-rel="popup" data-role="button" data-mini="true" data-corners="false">CONTACT</a>
-                     <div id="Contact" data-role="popup" data-theme="d" data-mini="true" data-overlay-theme="d" data-position-to="window">
-                         <p>We would like to hear from you.<br />&nbsp;&nbsp;&nbsp;Thank you, Steve Quattrochi</p>
-                         <p>NAME:</p>
-                        <P>PHONE: (business) </P>
-                        <p>EMAIL:</p>
-                         <p>ADDRESS</p>
-                        <p>MESSAGE: with a BUTTON for Send</p>
-                        <br />
-                    </div>
-           </div>
+       <div class="detailimage"><img src="img/vistaLogoweb21.png"/><img src="img/distinquish02.png" />       
+       <div class="ui-btn-right" data-mini="true" >
+            <a data-role="button" data-corners="false">DESIGNERS</a>
+            <a href="#About" data-role="button" data-corners="false" data-rel="popup">ABOUT</a>
+            <a href="#Contact" data-role="button" data-corners="false" data-rel="popup">CONTACT</a>
+        </div>
 
        </div>
         </div>
@@ -106,7 +88,15 @@
                     <li><a href="#Gallery6"><img src="img/thumb/th-custom.png" alt="custom craftsmanshiip" /><h2>Custom Craftsmanship</h2><p>Entertainment - bars - furniture - tables</p></a></li>
                </ul>  
  
-          
+       <div data-role="popup" data-theme="d" data-mini="true" id="About"><p>This is where info ABOUT Vista would go.<p></div>
+          <div data-role="popup" data-theme="d" data-mini="true" id="Contact">
+	        <h3>CONTACT</h3>
+            <h3>address here with map popoup BUTTON link</h3>
+            <h3>Phone 630-800-6343 || Steve Quattrochi with a BUTTON to call directly</h3>    
+            <h3>Name</h3><br />
+            <h3>eMAIL</h3><br />
+            <h3>Message with a BUTTON for Send</h3><br />
+         </div> 
 </div><!-- content -->
 <div data-role="footer" data-theme="d">
 		<h4>VISTA WOODWORKING LLC</h4>

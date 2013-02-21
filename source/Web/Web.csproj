@@ -147,6 +147,7 @@
     <Content Include="code.photoswipe-3.0.5.min.js" />
     <Content Include="code.photoswipe.jquery-3.0.5.js" />
     <Content Include="code.photoswipe.jquery-3.0.5.min.js" />
+    <Content Include="Copy of index.html" />
     <Content Include="error.gif" />
     <Content Include="icons%402x.png" />
     <Content Include="icons.png" />
