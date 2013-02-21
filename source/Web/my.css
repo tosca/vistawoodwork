@@ -29,5 +29,51 @@
     margin: 0.9em 0 0 18em;
     margin-left:310px;
 }
+.ui-li-desc {
+    font-size: 18px;
+    font-weight: normal;
+    overflow: visible;
+    width: 100%;
+    white-space: nowrap;
+    color: #722b00;
+}
+p {
+    font-family: MyFirstFont;
+}
+.ui-li-heading {
+    font-size: 32px;
+    font-weight: normal;
+    overflow: visible;
+    width:100%;
+    white-space: nowrap;
+    color:#722b00;
+}
+h2 {
+    font-family: MyFancyFont;
+}
+@font-face
+{
+font-family: MyFirstFont;
+src: url('fonts/Cicle Gordita_0.ttf') format('truetype'),
+     url('fonts/Cicle Gordita_0.eot') format('eot'), 
+    url('fonts/Cicle Gordita_0.woff') format('woff'),
+    url('fonts/Cicle Gordita_0.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-size: medium;
+}
+@font-face
+{
+font-family: MyFancyFont;
+src: url('fonts/PRISTINA_1.ttf') format('truetype'),
+     url('fonts/PRISTINA_1.eot') format('eot'), 
+    url('fonts/PRISTINA_1.woff') format('woff'),
+    url('fonts/PRISTINA_1.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: expanded;
+}
+
+
 
     
