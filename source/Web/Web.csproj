@@ -196,6 +196,7 @@
     <Content Include="images\thumb\019.jpg" />
     <Content Include="images\thumb\020.jpg" />
     <Content Include="images\twittericon.png" />
+    <Content Include="img\vistaLogoweb22.png" />
     <Content Include="loader.gif" />
     <Content Include="MIT-license.txt" />
     <Content Include="old04-jquery-mobile.html" />
