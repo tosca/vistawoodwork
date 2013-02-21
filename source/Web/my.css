@@ -7,13 +7,17 @@
 .detailimage {
     width: 100%;
     margin-right: 0;
-    margin-left: 0;
+    margin-left: 0;        
 }
 
 .detailimage img {
     width: auto;
     height:auto;
 }
+    .detailimage h2 p {
+        color: #722b00;
+
+    }
 .ui-li-thumb, .ui-listview .ui-li-icon {
     left: 20px;
     max-height: 233px;
