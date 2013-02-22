@@ -410,6 +410,13 @@
     <Content Include="Scripts\knockout-2.0.0.js" />
     <Content Include="Scripts\modernizr-2.0.6-development-only.js" />
     <Content Include="fonts\styles.css" />
+    <Content Include="themes\images\ajax-loader.gif" />
+    <Content Include="themes\images\icons-18-black.png" />
+    <Content Include="themes\images\icons-18-white.png" />
+    <Content Include="themes\images\icons-36-black.png" />
+    <Content Include="themes\images\icons-36-white.png" />
+    <Content Include="themes\vista.css" />
+    <Content Include="themes\vista.min.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
