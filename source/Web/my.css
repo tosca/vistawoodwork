@@ -7,17 +7,15 @@
 .detailimage {
     width: 100%;
     margin-right: 0;
-    margin-left: 0;        
+    margin-left: 0; 
+      
 }
 
 .detailimage img {
     width: auto;
     height:auto;
 }
-    .detailimage h2 p {
-        color: #722b00;
-
-    }
+ 
 .ui-li-thumb, .ui-listview .ui-li-icon {
     left: 20px;
     max-height: 233px;
@@ -27,7 +25,8 @@
 }
 
 .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb {
-    min-height: 233px;   
+    min-height: 208px;
+  
 }
 .ui-li-heading, .ui-li-desc{
     margin: 0.9em 0 0 18em;
@@ -52,6 +51,7 @@ p {
     white-space: nowrap;
     color:#722b00;
 }
+
 .ui-header .ui-title, .ui-footer .ui-title {
     text-overflow:initial;
     font-family: MyFirstFont;
