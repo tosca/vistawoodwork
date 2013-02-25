@@ -474,10 +474,10 @@
     <Content Include="fonts\Cicle Fina Italic_0.ttf" />
     <Content Include="fonts\Cicle Fina_0.ttf" />
     <Content Include="fonts\Cicle Gordita Italic_0.ttf" />
-    <Content Include="fonts\Cicle Gordita_0.ttf" />
+    <Content Include="Cicle Gordita_0.ttf" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\PRISTINA_1.TTF" />
+    <Content Include="PRISTINA_1.TTF" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
