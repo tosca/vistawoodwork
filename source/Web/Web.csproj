@@ -142,12 +142,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="04-jquery-mobile.html" />
     <Content Include="code.photoswipe-3.0.5.js" />
     <Content Include="code.photoswipe-3.0.5.min.js" />
     <Content Include="code.photoswipe.jquery-3.0.5.js" />
     <Content Include="code.photoswipe.jquery-3.0.5.min.js" />
-    <Content Include="Copy of index.html" />
     <Content Include="error.gif" />
     <Content Include="icons%402x.png" />
     <Content Include="icons.png" />
@@ -227,7 +225,6 @@
     <Content Include="img\vistaLogoweb22.png" />
     <Content Include="loader.gif" />
     <Content Include="MIT-license.txt" />
-    <Content Include="old04-jquery-mobile.html" />
     <Content Include="assets\error.gif" />
     <Content Include="assets\icons%402x.png" />
     <Content Include="assets\icons.png" />
