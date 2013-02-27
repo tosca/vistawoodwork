@@ -153,46 +153,6 @@
     <Content Include="images\codecomputerlovelogo.gif" />
     <Content Include="images\facebookicon.png" />
     <Content Include="images\flickricon.png" />
-    <Content Include="images\full\001.jpg" />
-    <Content Include="images\full\002.jpg" />
-    <Content Include="images\full\003.jpg" />
-    <Content Include="images\full\004.jpg" />
-    <Content Include="images\full\005.jpg" />
-    <Content Include="images\full\006.jpg" />
-    <Content Include="images\full\007.jpg" />
-    <Content Include="images\full\008.jpg" />
-    <Content Include="images\full\009.jpg" />
-    <Content Include="images\full\010.jpg" />
-    <Content Include="images\full\011.jpg" />
-    <Content Include="images\full\012.jpg" />
-    <Content Include="images\full\013.jpg" />
-    <Content Include="images\full\014.jpg" />
-    <Content Include="images\full\015.jpg" />
-    <Content Include="images\full\016.jpg" />
-    <Content Include="images\full\017.jpg" />
-    <Content Include="images\full\018.jpg" />
-    <Content Include="images\full\019.jpg" />
-    <Content Include="images\full\020.jpg" />
-    <Content Include="images\thumb\001.jpg" />
-    <Content Include="images\thumb\002.jpg" />
-    <Content Include="images\thumb\003.jpg" />
-    <Content Include="images\thumb\004.jpg" />
-    <Content Include="images\thumb\005.jpg" />
-    <Content Include="images\thumb\006.jpg" />
-    <Content Include="images\thumb\007.jpg" />
-    <Content Include="images\thumb\008.jpg" />
-    <Content Include="images\thumb\009.jpg" />
-    <Content Include="images\thumb\010.jpg" />
-    <Content Include="images\thumb\011.jpg" />
-    <Content Include="images\thumb\012.jpg" />
-    <Content Include="images\thumb\013.jpg" />
-    <Content Include="images\thumb\014.jpg" />
-    <Content Include="images\thumb\015.jpg" />
-    <Content Include="images\thumb\016.jpg" />
-    <Content Include="images\thumb\017.jpg" />
-    <Content Include="images\thumb\018.jpg" />
-    <Content Include="images\thumb\019.jpg" />
-    <Content Include="images\thumb\020.jpg" />
     <Content Include="images\twittericon.png" />
     <Content Include="img\door\Vista_Door_01.jpg" />
     <Content Include="img\door\Vista_Door_02.jpg" />
@@ -457,6 +417,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="images\full\" />
+    <Folder Include="images\thumb\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
