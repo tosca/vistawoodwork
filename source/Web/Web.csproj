@@ -261,7 +261,6 @@
     <Content Include="img\bath\DSC03774.jpg" />
     <Content Include="img\bath\DSC03775.jpg" />
     <Content Include="img\bath\DSC03776.jpg" />
-    <Content Include="img\kit\vista_sq01.png" />
     <Content Include="img\millwork\DSC03739.jpg" />
     <Content Include="img\millwork\DSC03740.jpg" />
     <Content Include="img\millwork\DSC03746.jpg" />
@@ -281,34 +280,11 @@
     <Content Include="img\kitchen\101.jpg" />
     <Content Include="img\kitchen\101sq.jpg" />
     <Content Include="img\kitchen\102sq.jpg" />
-    <Content Include="img\kitchen\103.jpg" />
     <Content Include="img\kitchen\306.jpg" />
     <Content Include="img\kitchen\312.jpg" />
     <Content Include="img\kitchen\317sq.jpg" />
     <Content Include="img\kitchen\7.jpg" />
     <Content Include="img\kitchen\9sq.jpg" />
-    <Content Include="img\kit\20121022_153124.jpg" />
-    <Content Include="img\kit\20121022_153146.jpg" />
-    <Content Include="img\kit\20121022_153314.jpg" />
-    <Content Include="img\kit\20121022_153332.jpg" />
-    <Content Include="img\kit\20121022_153524.jpg" />
-    <Content Include="img\kit\20121022_160312.jpg" />
-    <Content Include="img\kit\20121023_132233.jpg" />
-    <Content Include="img\kit\DSC03725.jpg" />
-    <Content Include="img\kit\DSC03726.jpg" />
-    <Content Include="img\kit\DSC03727.jpg" />
-    <Content Include="img\kit\DSC03728.jpg" />
-    <Content Include="img\kit\DSC03729.jpg" />
-    <Content Include="img\kit\DSC03730.jpg" />
-    <Content Include="img\kit\DSC03731.jpg" />
-    <Content Include="img\kit\DSC03732.jpg" />
-    <Content Include="img\kit\DSC03734.jpg" />
-    <Content Include="img\kit\DSC03735.jpg" />
-    <Content Include="img\kit\DSC03736.jpg" />
-    <Content Include="img\kit\DSC03783.jpg" />
-    <Content Include="img\kit\DSC03784.jpg" />
-    <Content Include="img\kit\DSC03785.jpg" />
-    <Content Include="img\kit\DSC03786.jpg" />
     <Content Include="img\thumb\th-bar.png" />
     <Content Include="img\thumb\th-bath.png" />
     <Content Include="img\thumb\th-custom.png" />
@@ -419,6 +395,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="images\full\" />
     <Folder Include="images\thumb\" />
+    <Folder Include="img\kit\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
