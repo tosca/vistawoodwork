@@ -15,43 +15,62 @@
     width: auto;
     height:auto;
 }
- 
-.ui-li-thumb, .ui-listview .ui-li-icon {
+
+.ui-li-listview .ui-btn{
+    width: 100%;
+}
+.ui-li-thumb {
     left: 20px;
     max-height: 233px;
     max-width: 340px;
-    top: 0;
+    top: 40px;
     position:absolute;
 }
-
-.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb {
+.ui-btn .ui-listview {
     min-height: 209px;
-  
 }
+
+/*.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb {
+    min-height: 209px;
+    min-width: 360px;
+}*/
 .ui-li-heading, .ui-li-desc{
-    margin: 0.9em 0 0 18em;
-    margin-left:310px;
+    margin: .2em .6em 0;
+    font-weight: normal;
+}
+.ui-li-heading {
+   font-size: 1.6em;
+    overflow: visible;
+    color:#722b00;
+}
+.ui-content .ui-listview {
+    margin:auto;
 }
 .ui-li-desc {
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight: normal;
     overflow: visible;
-    width: 100%;
     white-space: nowrap;
     color: #722b00;
 }
+.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb {
+    min-height: 300px;
+    min-width: 390px;
+    padding-left: 0;
+}
+.ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
+    display: block;
+    padding: 0;
+}
+.ui-li .ui-btn-text a.ui-link-inherit {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 p {
     font-family: "MyFirstFont";
 }
-.ui-li-heading {
-    font-size: 32px;
-    font-weight: normal;
-    overflow: visible;
-    width:100%;
-    white-space: nowrap;
-    color:#722b00;
-}
-
 .ui-header .ui-title, .ui-footer .ui-title {
     text-overflow:initial;
     font-family: "MyFirstFont";
