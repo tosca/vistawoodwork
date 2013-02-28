@@ -67,6 +67,9 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+.form p{
+    color:#722b00;
+}
 
 p {
     font-family: "MyFirstFont";
@@ -88,7 +91,7 @@ h2 {
          url('Cicle Gordita_0.svg') format('svg');
     font-weight: 800;
     font-style: normal;
-    font-size: 16px;
+    font-size: 1.5em;
     font-stretch: expanded;
 }
 @font-face

@@ -8,9 +8,10 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
  
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />  
-        <link rel="stylesheet" type="text/css" href="photoswipe.css"   />
+       <link rel="stylesheet" type="text/css" href="fonts/styles.css"   />
+         <link rel="stylesheet" type="text/css" href="photoswipe.css"   />
+       <link rel="stylesheet" type="text/css" href="themes/vista.min.css" />
         <link rel="stylesheet" type="text/css" href="my.css" />
-              <link rel="stylesheet" type="text/css" href="themes/vista.min.css" />
         <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
         <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>    
         <script type="text/javascript" src="lib/klass.min.js"></script>  
@@ -53,18 +54,18 @@
 
     }(window, window.jQuery, window.Code.PhotoSwipe));
 
-		
+
 	</script>
 
     </head>
-    <body data-theme="a">
+    <body data-theme="b">
         <!-- Home -->
-        <div data-overlay-theme="a" data-role="page" data-title="VISTA woodworking" id="page1">
+        <div data-theme="b" data-role="page" data-title="VISTA woodworking" id="page1">
        <div data-role="header" data-theme="b">
-       <div class="detailimage"><img src="img/vistaLogoweb22.png" alt="VISTA WOODWORKING LLC"/><img src="img/distinquish02.png" alt="Distinguished Cabinetry, Doors, and Architectural Millwork: Custom Craftsmanship for Greater Chicago Homes"/>
+      <div class="detailimage"><img src="img/vistaLogoweb22.png" alt="VISTA WOODWORKING LLC"/><img src="img/distinquish02.png" alt="Distinguished Cabinetry, Doors, and Architectural Millwork: Custom Craftsmanship for Greater Chicago Homes"/>
             <div data-role="controlgroup" class="ui-btn-right" data-type="horizontal" data-corners="false">          
                  <a href="#About" data-rel="popup" data-role="button" data-mini="true">ABOUT</a>
-                    <div id="About" data-role="popup" data-theme="b" data-mini="true" data-overlay-theme="b" data-position-to="window">
+                    <div id="About" data-role="popup" data-theme="b" data-mini="true" data-overlay-theme="b" style="margin-top:50px" data-position-to="window">
                          <p>Vista Woodworking has filled a niche in the Chicagoland design community.  
                              We partner up with the finest designers to make their most creative endever a reality.</p>
                             <p>Vista specializes in a wide range of custom creations from; fine kitchen, 
@@ -72,41 +73,39 @@
                         specialized design pieces, architectural millwork and accents.</p>
                         <p>We also create exquist handcrafted entry and interior doors deserving of the 
                         fine homes you will serivce.</p>
-                        <p>>Vista's excellence in design, construction, material selection, finishing and 
+                        <p>Vista's excellence in design, construction, material selection, finishing and 
                         professional installation will ensure your projects success.</p>
                          <p>Installation:<br />
                           Our bonded and insured installation crew are extremely knowledgable, curtious and respectful of the residence.</p>
                      </div>
                <a href="#Contact" data-rel="popup" data-role="button" data-mini="true" data-corners="false">CONTACT</a>
-                     <div id="Contact" data-role="popup" data-theme="d" data-mini="true" data-overlay-theme="b" data-position-to="window">
-                         <form action="form.php" method="post"> 
+                     <div id="Contact" data-role="popup" data-theme="b" data-mini="true" data-overlay-theme="b" style="margin-top:50px" data-position-to="window">
+                         
+                         <form action="form.php" method="post" style="padding:10px" data-enhance="false"> 
                           <p>We would like to hear from you.<br />&nbsp;&nbsp;&nbsp;Thank you, Steve Quattrochi</p><br />
                          <p>VISTA WOODWORKING LLC<br />23215 W. Mound Road<br />Joliet, IL 60436</p>
                          <p>Office: 815.922.2297<br />Fax: 815.714.2243 </p>
                         <br />
-                         <div data-role="fieldcontain"  class="ui-hide-label">
-	                        <label for="username">Your Name:</label>
-	                        <input type="text" name="username" id="username" value="" placeholder="Username"/>
+                         <div data-role="fieldcontain" data-corners="false">
+	                        <label for="username">Name:</label>
+	                        <input type="text" name="username" id="username" value="" placeholder="Name"/>
                         </div>
-                             <div data-role="fieldcontain" data-corners="false" class="ui-hide-label">
-	                        <label for="phone">Your Phone Number:</label>
+                             <div data-role="fieldcontain" >
+	                        <label for="phone">Phone:</label>
 	                        <input type="tel" name="phone" id="phone" value="" placeholder="Phone"/>
                         </div>
-                             <div data-role="fieldcontain" data-corners="false" class="ui-hide-label">
-	                        <label for="email">Your Email:</label>
-	                        <input type="email" name="email" id="email" value="" placeholder="Email"/>
+                             <div data-role="fieldcontain">
+	                        <label for="email">Email:</label>
+	                        <input type="email" name="email" id="email" data-corners="false" value="" placeholder="Email"/>
                         </div>
-                             <div data-role="fieldcontain" data-corners="false" class="ui-hide-label">
-	                        <label for="address">address:</label>
-	                        <input type="text" name="address" id="address" value="" placeholder="Address"/>
+                             <div data-role="fieldcontain">
+                            <label for="textarea">Message:</label><br />
+                            <textarea id="textarea" data-role="none" name="textarea" rows="8" cols="40"></textarea>
                         </div>
-                             <div data-role="fieldcontain" data-corners="false" class="ui-hide-label">
-	                        <label for="message">Your message:</label>
-	                        <input type="text" name="message" id="message" value="" placeholder="Message"/>
+                            <div data-role="fieldcontain" data-corners="false" class="ui-hide-label">
+                             <div data-role="button" class="ui-hide-label">Please Submit, and we will contact you.</div>
                         </div>
-                         <div data-role="button" class="ui-hide-label">Submit</div>
-                         <p></p>
-                         
+                         <p>Thank you for your interest in our millwork.</p>
                         </form>
                     </div>
           </div>
@@ -116,7 +115,7 @@
               <div data-role="controlgroup" data-type="horizontal" data-corners="false"> 
                 <ul data-role="listview">         
                     <li><a href="#Gallery1"><h2>Custom Kitchens .a</h2><img src="img/thumb/th-kit.png" alt="Custom Kitchens | view 1" /></a></li>
-                    <!--<li><a href="#Gallery1-2"><h2>Custom Kitchens .b</h2><img src="img/thumb/th-kit-2.png" alt="Custom Kitchens | view 2" /></a></li>-->
+                    <li><a href="#Gallery10"><h2>Custom Kitchens .b</h2><img src="img/thumb/th-kit-2.png" alt="Custom Kitchens | view 2" /></a></li>
                     <li><a href="#Gallery2"><h2>Elegant Bathrooms</h2><img src="img/thumb/th-bath.png" alt="custom vanities" /></a></li>
                     <li><a href="#Gallery3"><h2>Designer Doors</h2><img src="img/thumb/th-door.png" alt="custom doors" /></a></li>
                     <li><a href="#Gallery4"><h2>Architectural Millwork</h2><img src="img/thumb/th-mill.png" alt="architectural millwork" />></a></li>
@@ -129,7 +128,7 @@
 <div data-role="footer" data-theme="d">
 		<h4>VISTA WOODWORKING LLC</h4>
 </div> 	
-        </div><!-- page1 -->
+        </div><!-- pageGallery1 -->
 <div data-role="page" data-add-back-btn="true" data-theme="b" class="gallery-page" id="Gallery1" >
 
 	<div data-role="header" >
@@ -140,12 +139,14 @@
 		
 		<ul class="gallery">
 		
-			<li><a href="img/kit/20121022_153146.jpg" rel="external"><img src="img/kit/20121022_153146.jpg" alt="Vista kitchen_01" /></a></li>
-			<li><a href="img/kit/20121022_153314.jpg" rel="external"><img src="img/kit/20121022_153314.jpg" alt="Vista kitchen_02" /></a></li>  
-            <li><a href="img/kit/20121022_153524.jpg" rel="external"><img src="img/kit/20121022_153524.jpg" alt="Vista kitchen_04" /></a></li>
-            <li><a href="img/kit/20121022_153332.jpg" rel="external"><img src="img/kit/20121022_153332.jpg" alt="Vista kitchen_03" /></a></li>
-            <li><a href="img/kit/20121022_160312.jpg" rel="external"><img src="img/kit/20121022_160312.jpg" alt="Vista kitchen_05" /></a></li>
-            <li><a href="img/kit/20121022_153124.jpg" rel="external"><img src="img/kit/20121022_153124.jpg" alt="Vista kitchen_06" /></a></li>
+			<li><a href="img/kitchen/Vista_kitchen_01.jpg" rel="external"><img src="img/kitchen/Vista_kitchen_01.jpg" alt="Vista Kitchen_01" /></a></li>
+            <li><a href="img/kitchen/Vista_kitchen_02.jpg" rel="external"><img src="img/kitchen/Vista_kitchen_02.jpg" alt="Vista Kitchen_02" /></a></li>
+            <li><a href="img/kitchen/Vista_kitchen_03.jpg" rel="external"><img src="img/kitchen/Vista_kitchen_03.jpg" alt="Vista Kitchen_03" /></a></li>
+            <li><a href="img/kitchen/Vista_kitchen_04.jpg" rel="external"><img src="img/kitchen/Vista_kitchen_04.jpg" alt="Vista Kitchen_04" /></a></li>
+            <li><a href="img/kitchen/Vista_kitchen_05.jpg" rel="external"><img src="img/kitchen/Vista_kitchen_05.jpg" alt="Vista Kitchen_05" /></a></li>
+            <li><a href="img/kitchen/Vista_kitchen_06.jpg" rel="external"><img src="img/kitchen/Vista_kitchen_06.jpg" alt="Vista Kitchen_06" /></a></li>
+            <li><a href="img/kitchen/Vista_kitchen_07.jpg" rel="external"><img src="img/kitchen/Vista_kitchen_01.jpg" alt="Vista Kitchen_07" /></a></li>
+			
           	
 		</ul>
 </div>
@@ -154,12 +155,31 @@
 	</div> 
 
 </div>
- <div data-role="page" data-add-back-btn="true" data-theme="b" class="gallery-page"id="Gallery2">
-	<div data-role="header">
-		<h1>Bathroom Vanities, Closets, Showers, Storage</h1>
-	</div>
+              <!-- page gallery12-->
+<div data-role="page" data-add-back-btn="true" data-theme="b" class="gallery-page" id="Gallery10">
+
+	<div data-role="header"><h1>KITCHEN b</h1></div>
+
 	<div data-role="content">	
-		
+		<ul class="gallery">
+			<li><a href="img/kitchen/Vista_kitchen_10.jpg" rel="external"><img src="img/kitchen/Vista_kitchen_10.jpg" alt="Vista Kitchen_10" /></a></li>
+            <li><a href="img/kitchen/Vista_kitchen_11.jpg" rel="external"><img src="img/kitchen/Vista_kitchen_11.jpg" alt="Vista Kitchen_11" /></a></li>
+            <li><a href="img/kitchen/Vista_kitchen_12.jpg" rel="external"><img src="img/kitchen/Vista_kitchen_12.jpg" alt="Vista Kitchen_12" /></a></li>
+            <li><a href="img/kitchen/Vista_kitchen_13.jpg" rel="external"><img src="img/kitchen/Vista_kitchen_13.jpg" alt="Vista Kitchen_13" /></a></li>
+            <li><a href="img/kitchen/Vista_kitchen_14.jpg" rel="external"><img src="img/kitchen/Vista_kitchen_14.jpg" alt="Vista Kitchen_14" /></a></li>
+            <li><a href="img/kitchen/Vista_kitchen_15.jpg" rel="external"><img src="img/kitchen/Vista_kitchen_15.jpg" alt="Vista Kitchen_15" /></a></li>
+            <li><a href="img/kitchen/Vista_kitchen_16.jpg" rel="external"><img src="img/kitchen/Vista_kitchen_16.jpg" alt="Vista Kitchen_16" /></a></li>
+            <li><a href="img/kitchen/Vista_kitchen_17.jpg" rel="external"><img src="img/kitchen/Vista_kitchen_17.jpg" alt="Vista Kitchen_17" /></a></li>
+            <li><a href="img/kitchen/Vista_kitchen_18.jpg" rel="external"><img src="img/kitchen/Vista_kitchen_18.jpg" alt="Vista Kitchen_18" /></a></li>
+		</ul>
+    </div>
+   <div data-role="footer" data-theme="d"><h4>VISTA WOODWORKING LLC</h4></div> 
+</div>
+            <!-- page Gallery2-->
+ <div data-role="page" data-add-back-btn="true" data-theme="b" class="gallery-page"id="Gallery2">
+	<div data-role="header"><h1>Bathroom Vanities, Closets, Showers, Storage</h1></div>
+	
+     <div data-role="content">	
 		<ul class="gallery">
 			 <li><a href="img/bath/DSC03617.jpg" rel="external"><img src="img/bath/DSC03617.jpg" alt="Vista Bathroom_01" /></a></li>
              <li><a href="img/bath/DSC03618.jpg" rel="external"><img src="img/bath/DSC03618.jpg" alt="Vista Bathroom_02" /></a></li>
@@ -174,19 +194,15 @@
 		
         </ul>
 </div>
-<div data-role="footer" data-theme="d">
-		<h4>VISTA WOODWORKING LLC</h4>
-</div> 	
+<div data-role="footer" data-theme="d"><h4>VISTA WOODWORKING LLC</h4></div> 	
 </div>
-
+            <!-- page Gallery3-->
  <div data-role="page" data-add-back-btn="true" data-theme="b" class="gallery-page"id="Gallery3">
 	<div data-role="header">
-		<h1>Custom Doors and Entry Casing</h1>
-	</div>
-	<div data-role="content">	
-		
+		<h1>Custom Doors and Entry Casing</h1></div>
+	
+     <div data-role="content">	
 		<ul class="gallery">
-		
              <li><a href="img/door/Vista_Door_02.jpg" rel="external"><img src="img/door/Vista_Door_02.jpg" alt="Vista Door_02" /></a></li>
              <li><a href="img/door/Vista_Door_03.jpg" rel="external"><img src="img/door/Vista_Door_03.jpg" alt="Vista Door_03" /></a></li>
              <li><a href="img/door/Vista_Door_04.jpg" rel="external"><img src="img/door/Vista_Door_04.jpg" alt="Vista Door_04" /></a></li>
@@ -204,83 +220,74 @@
              <li><a href="img/door/Vista_Door_15.jpg" rel="external"><img src="img/door/Vista_Door_15.jpg" alt="Vista Door_15" /></a></li>
              <li><a href="img/door/Vista_Door_16.jpg" rel="external"><img src="img/door/Vista_Door_16.jpg" alt="Vista Door_16" /></a></li>
              <li><a href="img/door/Vista_Door_17.jpg" rel="external"><img src="img/door/Vista_Door_17.jpg" alt="Vista Door_17" /></a></li>
-</ul>
-</div>
-<div data-role="footer" data-theme="d">
-		<h4>VISTA WOODWORKING LLC</h4>
-</div> 	
-</div>
-
-         <div data-role="page" data-add-back-btn="true" data-theme="b" class="gallery-page"id="Gallery4">
-	<div data-role="header">
-		<h1>Architectural Millwork</h1>
-	</div>
-	<div data-role="content">	
-		
-		<ul class="gallery">
-		
-			<li><a href="img/millwork/DSC03739.jpg" rel="external"><img src="img/millwork/DSC03739.jpg" alt="Vista Milwork_01" /></a></li>
-            <li><a href="img/millwork/DSC03740.jpg" rel="external"><img src="img/millwork/DSC03740.jpg" alt="Vista Milwork_02" /></a></li>
-            <li><a href="img/millwork/DSC03744.jpg" rel="external"><img src="img/millwork/DSC03744.jpg" alt="Vista Milwork_03" /></a></li>
-            <li><a href="img/millwork/DSC03746.jpg" rel="external"><img src="img/millwork/DSC03746.jpg" alt="Vista Milwork_04" /></a></li>
-            <li><a href="img/millwork/DSC03748.jpg" rel="external"><img src="img/millwork/DSC03748.jpg" alt="Vista Milwork_01" /></a></li>
-		    <li><a href="img/millwork/DSC03757.jpg" rel="external"><img src="img/millwork/DSC03757.jpg" alt="Vista Milwork_01" /></a></li>
-		    <li><a href="img/millwork/DSC03758.jpg" rel="external"><img src="img/millwork/DSC03758.jpg" alt="Vista Milwork_01" /></a></li>
-            <li><a href="img/millwork/DSC03759.jpg" rel="external"><img src="img/millwork/DSC03759.jpg" alt="Vista Milwork_01" /></a></li>
-		    <li><a href="img/millwork/DSC03760.jpg" rel="external"><img src="img/millwork/DSC03760.jpg" alt="Vista Milwork_01" /></a></li>
-		    <li><a href="img/millwork/DSC03761.jpg" rel="external"><img src="img/millwork/DSC03761.jpg" alt="Vista Milwork_01" /></a></li>
-		    <li><a href="img/millwork/DSC03762.jpg" rel="external"><img src="img/millwork/DSC03762.jpg" alt="Vista Milwork_01" /></a></li>
-		    <li><a href="img/millwork/DSC03764.jpg" rel="external"><img src="img/millwork/DSC03764.jpg" alt="Vista Milwork_01" /></a></li>
-		    <li><a href="img/millwork/DSC03765.jpg" rel="external"><img src="img/millwork/DSC03765.jpg" alt="Vista Milwork_01" /></a></li>
-		    <li><a href="img/millwork/DSC03766.jpg" rel="external"><img src="img/millwork/DSC03766.jpg" alt="Vista Milwork_01" /></a></li>
-		    <li><a href="img/millwork/DSC03767.jpg" rel="external"><img src="img/millwork/DSC03767.jpg" alt="Vista Milwork_01" /></a></li>
-		    <li><a href="img/millwork/DSC03777.jpg" rel="external"><img src="img/millwork/DSC03777.jpg" alt="Vista Milwork_01" /></a></li>
-            <li><a href="img/millwork/DSC03778.jpg" rel="external"><img src="img/millwork/DSC03778.jpg" alt="Vista Milwork_01" /></a></li>
-		    <li><a href="img/millwork/DSC03780.jpg" rel="external"><img src="img/millwork/DSC03780.jpg" alt="Vista Milwork_01" /></a></li>
-		    <li><a href="img/millwork/DSC03781.jpg" rel="external"><img src="img/millwork/DSC03781.jpg" alt="Vista Milwork_01" /></a></li>
-		    <li><a href="img/millwork/DSC03782.jpg" rel="external"><img src="img/millwork/DSC03782.jpg" alt="Vista Milwork_01" /></a></li>
-		
-        
-        
-        
-        
         </ul>
 </div>
-<div data-role="footer" data-theme="d">
-		<h4>VISTA WODWORKING LLC</h4>
-</div> 	
+<div data-role="footer" data-theme="d"><h4>VISTA WOODWORKING LLC</h4></div> 	
 </div>
-
-         <div data-role="page" data-add-back-btn="true" data-theme="b" class="gallery-page"id="Gallery5">
-	<div data-role="header">
-		<h1>Bars and Entertainment</h1>
-	</div>
-	<div data-role="content">	
-		
+            <!-- page Gallery4-->
+         <div data-role="page" data-add-back-btn="true" data-theme="b" class="gallery-page"id="Gallery4">
+	<div data-role="header"><h1>Architectural Millwork</h1></div>
+	
+     <div data-role="content">	
 		<ul class="gallery">
-		
+			<li><a href="img/millwork/Vista_Millwork_01.jpg" rel="external"><img src="img/millwork/Vista_Millwork_01.jpg" alt="Vista Millwork_01" /></a></li>
+            <li><a href="img/millwork/Vista_Millwork_02.jpg" rel="external"><img src="img/millwork/Vista_Millwork_02.jpg" alt="Vista Millwork_02" /></a></li>
+            <li><a href="img/millwork/Vista_Millwork_03.jpg" rel="external"><img src="img/millwork/Vista_Millwork_03.jpg" alt="Vista Millwork_03" /></a></li>
+            <li><a href="img/millwork/Vista_Millwork_04.jpg" rel="external"><img src="img/millwork/Vista_Millwork_04.jpg" alt="Vista Millwork_04" /></a></li>
+            <li><a href="img/millwork/Vista_Millwork_05.jpg" rel="external"><img src="img/millwork/Vista_Millwork_05.jpg" alt="Vista Millwork_05" /></a></li>
+		    <li><a href="img/millwork/Vista_Millwork_06.jpg" rel="external"><img src="img/millwork/Vista_Millwork_06.jpg" alt="Vista Millwork_06" /></a></li>
+		    <li><a href="img/millwork/Vista_Millwork_07.jpg" rel="external"><img src="img/millwork/Vista_Millwork_07.jpg" alt="Vista Millwork_07" /></a></li>
+            <li><a href="img/millwork/Vista_Millwork_08.jpg" rel="external"><img src="img/millwork/Vista_Millwork_08.jpg" alt="Vista Millwork_08" /></a></li>
+		    <li><a href="img/millwork/Vista_Millwork_09.jpg" rel="external"><img src="img/millwork/Vista_Millwork_09.jpg" alt="Vista Millwork_09" /></a></li>
+		    <li><a href="img/millwork/Vista_Millwork_10.jpg" rel="external"><img src="img/millwork/Vista_Millwork_10.jpg" alt="Vista Millwork_10" /></a></li>
+		    <li><a href="img/millwork/Vista_Millwork_11.jpg" rel="external"><img src="img/millwork/Vista_Millwork_11.jpg" alt="Vista Millwork_11" /></a></li>
+		    <li><a href="img/millwork/Vista_Millwork_12.jpg" rel="external"><img src="img/millwork/Vista_Millwork_12.jpg" alt="Vista Millwork_12" /></a></li>
+		    <li><a href="img/millwork/Vista_Millwork_13.jpg" rel="external"><img src="img/millwork/Vista_Millwork_13.jpg" alt="Vista Millwork_13" /></a></li>
+		    <li><a href="img/millwork/Vista_Millwork_14.jpg" rel="external"><img src="img/millwork/Vista_Millwork_14.jpg" alt="Vista Millwork_14" /></a></li>
+		    <li><a href="img/millwork/Vista_Millwork_15.jpg" rel="external"><img src="img/millwork/Vista_Millwork_15.jpg" alt="Vista Millwork_15" /></a></li>
+		    <li><a href="img/millwork/Vista_Millwork_16.jpg" rel="external"><img src="img/millwork/Vista_Millwork_16.jpg" alt="Vista Millwork_16" /></a></li>
+            <li><a href="img/millwork/Vista_Millwork_17.jpg" rel="external"><img src="img/millwork/Vista_Millwork_17.jpg" alt="Vista Millwork_17" /></a></li>
+		    <li><a href="img/millwork/Vista_Millwork_18.jpg" rel="external"><img src="img/millwork/Vista_Millwork_18.jpg" alt="Vista Millwork_18" /></a></li>
+		    <li><a href="img/millwork/Vista_Millwork_19.jpg" rel="external"><img src="img/millwork/Vista_Millwork_19.jpg" alt="Vista Millwork_19" /></a></li>
+		    <li><a href="img/millwork/Vista_Millwork_20.jpg" rel="external"><img src="img/millwork/Vista_Millwork_20.jpg" alt="Vista Millwork_20" /></a></li>
+            <li><a href="img/millwork/Vista_Millwork_21.jpg" rel="external"><img src="img/millwork/Vista_Millwork_21.jpg" alt="Vista Millwork_21" /></a></li>
+            <li><a href="img/millwork/Vista_Millwork_22.jpg" rel="external"><img src="img/millwork/Vista_Millwork_22.jpg" alt="Vista Millwork_22" /></a></li>
+            <li><a href="img/millwork/Vista_Millwork_23.jpg" rel="external"><img src="img/millwork/Vista_Millwork_23.jpg" alt="Vista Millwork_23" /></a></li>
+            <li><a href="img/millwork/Vista_Millwork_24.jpg" rel="external"><img src="img/millwork/Vista_Millwork_24.jpg" alt="Vista Millwork_24" /></a></li>
+            <li><a href="img/millwork/Vista_Millwork_25.jpg" rel="external"><img src="img/millwork/Vista_Millwork_25.jpg" alt="Vista Millwork_25" /></a></li>
+            <li><a href="img/millwork/Vista_Millwork_26.jpg" rel="external"><img src="img/millwork/Vista_Millwork_26.jpg" alt="Vista Millwork_26" /></a></li>
+            <li><a href="img/millwork/Vista_Millwork_27.jpg" rel="external"><img src="img/millwork/Vista_Millwork_27.jpg" alt="Vista Millwork_27" /></a></li>
+            <li><a href="img/millwork/Vista_Millwork_28.jpg" rel="external"><img src="img/millwork/Vista_Millwork_28.jpg" alt="Vista Millwork_28" /></a></li>
+            <li><a href="img/millwork/Vista_Millwork_29.jpg" rel="external"><img src="img/millwork/Vista_Millwork_29.jpg" alt="Vista Millwork_29" /></a></li>
+            <li><a href="img/millwork/Vista_Millwork_30.jpg" rel="external"><img src="img/millwork/Vista_Millwork_30.jpg" alt="Vista Millwork_30" /></a></li>
+            <li><a href="img/millwork/Vista_Millwork_31.jpg" rel="external"><img src="img/millwork/Vista_Millwork_31.jpg" alt="Vista Millwork_31" /></a></li>
+            <li><a href="img/millwork/Vista_Millwork_32.jpg" rel="external"><img src="img/millwork/Vista_Millwork_32.jpg" alt="Vista Millwork_32" /></a></li>
+        </ul>
+</div>
+<div data-role="footer" data-theme="b"><h4>VISTA WOODWORKING LLC</h4></div> 	
+</div>
+        <!-- page Gallery5-->
+ <div data-role="page" data-add-back-btn="true" data-theme="b" class="gallery-page"id="Gallery5">
+	<div data-role="header"><h1>Entertainment</h1></div>
+	
+     <div data-role="content">	
+		<ul class="gallery">
 			 <li><a href="img/door/20121026_130941.jpg" rel="external"><img src="img/door/20121026_130941.jpg" alt="Vista Door_01" /></a></li>
 		</ul>
 </div>
-<div data-role="footer" data-theme="d">
-		<h4>VISTA WOODWORKING LLC</h4>
-</div> 	
+<div data-role="footer" data-theme="d"><h4>VISTA WOODWORKING LLC</h4></div> 	
 </div>
-
+            <!-- page Gallery6-->
                 <div data-role="page" data-add-back-btn="true" data-theme="b" class="gallery-page"id="Gallery6">
-	<div data-role="header">
-		<h1>Custom Carpentry and Furniture</h1>
-	</div>
-	<div data-role="content">	
-		
+	<div data-role="header"><h1>Custom Carpentry and Furniture</h1></div>
+	
+    <div data-role="content">	
 		<ul class="gallery">
-		
 			 <li><a href="img/door/20121026_130941.jpg" rel="external"><img src="img/door/20121026_130941.jpg" alt="Vista Door_01" /></a></li>
 		</ul>
 </div>
-<div data-role="footer" data-theme="d">
-		<h4>VISTA WOODWORKING LLC</h4>
-</div> 	
+<div data-role="footer" data-theme="d"><h4>VISTA WOODWORKING LLC</h4></div> 	
+
 </div>
          
 </body>

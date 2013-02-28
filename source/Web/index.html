@@ -63,9 +63,9 @@
         <div data-theme="b" data-role="page" data-title="VISTA woodworking" id="page1">
        <div data-role="header" data-theme="b">
       <div class="detailimage"><img src="img/vistaLogoweb22.png" alt="VISTA WOODWORKING LLC"/><img src="img/distinquish02.png" alt="Distinguished Cabinetry, Doors, and Architectural Millwork: Custom Craftsmanship for Greater Chicago Homes"/>
-            <div data-role="controlgroup" class="ui-btn-right" data-type="horizontal" data-corners="false">          
+  <div data-role="controlgroup" class="ui-btn-right" data-type="horizontal" data-corners="false">          
                  <a href="#About" data-rel="popup" data-role="button" data-mini="true">ABOUT</a>
-                    <div id="About" data-role="popup" data-theme="b" data-mini="true" data-overlay-theme="b" data-position-to="window">
+                    <div id="About" data-role="popup" data-theme="b" data-mini="true" data-overlay-theme="b" style="margin-top:50px" data-position-to="window">
                          <p>Vista Woodworking has filled a niche in the Chicagoland design community.  
                              We partner up with the finest designers to make their most creative endever a reality.</p>
                             <p>Vista specializes in a wide range of custom creations from; fine kitchen, 
@@ -79,35 +79,33 @@
                           Our bonded and insured installation crew are extremely knowledgable, curtious and respectful of the residence.</p>
                      </div>
                <a href="#Contact" data-rel="popup" data-role="button" data-mini="true" data-corners="false">CONTACT</a>
-                     <div id="Contact" data-role="popup" data-theme="d" data-mini="true" data-overlay-theme="b" data-position-to="window">
-                         <form action="form.php" method="post"> 
+                     <div id="Contact" data-role="popup" data-theme="b" data-mini="true" data-overlay-theme="b" style="margin-top:50px" data-position-to="window">
+                         
+                         <form action="form.php" method="post" style="padding:10px" data-enhance="false"> 
                           <p>We would like to hear from you.<br />&nbsp;&nbsp;&nbsp;Thank you, Steve Quattrochi</p><br />
                          <p>VISTA WOODWORKING LLC<br />23215 W. Mound Road<br />Joliet, IL 60436</p>
                          <p>Office: 815.922.2297<br />Fax: 815.714.2243 </p>
                         <br />
-                         <div data-role="fieldcontain"  class="ui-hide-label">
-	                        <label for="username">Your Name:</label>
-	                        <input type="text" name="username" id="username" value="" placeholder="Username"/>
+                         <div data-role="fieldcontain" data-corners="false">
+	                        <label for="username">Name:</label>
+	                        <input type="text" name="username" id="username" value="" placeholder="Name"/>
                         </div>
-                             <div data-role="fieldcontain" data-corners="false" class="ui-hide-label">
-	                        <label for="phone">Your Phone Number:</label>
+                             <div data-role="fieldcontain" >
+	                        <label for="phone">Phone:</label>
 	                        <input type="tel" name="phone" id="phone" value="" placeholder="Phone"/>
                         </div>
-                             <div data-role="fieldcontain" data-corners="false" class="ui-hide-label">
-	                        <label for="email">Your Email:</label>
-	                        <input type="email" name="email" id="email" value="" placeholder="Email"/>
+                             <div data-role="fieldcontain">
+	                        <label for="email">Email:</label>
+	                        <input type="email" name="email" id="email" data-corners="false" value="" placeholder="Email"/>
                         </div>
-                             <div data-role="fieldcontain" data-corners="false" class="ui-hide-label">
-	                        <label for="address">address:</label>
-	                        <input type="text" name="address" id="address" value="" placeholder="Address"/>
+                             <div data-role="fieldcontain">
+                            <label for="textarea">Message:</label><br />
+                            <textarea id="textarea" data-role="none" name="textarea" rows="8" cols="40"></textarea>
                         </div>
-                             <div data-role="fieldcontain" data-corners="false" class="ui-hide-label">
-	                        <label for="message">Your message:</label>
-	                        <input type="text" name="message" id="message" value="" placeholder="Message"/>
+                            <div data-role="fieldcontain" data-corners="false" class="ui-hide-label">
+                             <div data-role="button" class="ui-hide-label">Please Submit, and we will contact you.</div>
                         </div>
-                         <div data-role="button" class="ui-hide-label">Submit</div>
-                         <p></p>
-                         
+                         <p>Thank you for your interest in our millwork.</p>
                         </form>
                     </div>
           </div>
