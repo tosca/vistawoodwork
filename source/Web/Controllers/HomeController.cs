@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using System.Dynamic;
+using System.Dynamic; 
+using System.Configuration;
+using System.Text;
+using System.Net.Mail;
+using System.Net;
 
 namespace Web.Controllers
 {
@@ -64,13 +68,32 @@ namespace Web.Controllers
                 //    o.IpAddress = Request.ServerVariables["HTTP_X_FORWARDED_FOR"]; 
                 //}
                 //table.Insert(o);
-                //SendEmail(o.Name, o.Address1, o.City, o.State, o.Zip, o.Phone, o.Email, o.Company, o.Comment);
+                SendEmail(viewModel);
                 return RedirectToAction("ThankYou", "Home");
             }
             ModelState.AddModelError(string.Empty, "Oops,  " + string.Join(" ; ", ModelState.Values.SelectMany(x => x.Errors).Select(x => x.ErrorMessage)));
             return View(viewModel);
         }
 
+        protected void SendEmail(ContactViewModel viewModel)
+        {
+            var to = ConfigurationManager.AppSettings["EmailSendTo"];
+            var smtpEmailAddres = ConfigurationManager.AppSettings["SmtpEmailAddres"];
+            var smtpEmailPassword = ConfigurationManager.AppSettings["SmtpEmailPassword"];
+
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat("name:{0}          <br/>email:{1}        <br/>phone:{2}         <br/>Comments:{3}   ",
+                viewModel.Name, viewModel.Email, viewModel.Phone, viewModel.Comment);
+
+
+            var client = new SmtpClient("smtp.gmail.com", 587)
+            {
+                Credentials = new NetworkCredential(smtpEmailAddres, smtpEmailPassword),
+                EnableSsl = true
+            };
+            client.Send(smtpEmailAddres, to, "Vista Woodworking Website contact lead", sb.ToString());
+            //Response.Redirect("../Public/Thankyou.aspx");
+        }
     }
 
     public class ContactViewModel
