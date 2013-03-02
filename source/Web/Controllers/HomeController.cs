@@ -69,8 +69,15 @@ namespace Web.Controllers
                 //    o.IpAddress = Request.ServerVariables["HTTP_X_FORWARDED_FOR"]; 
                 //}
                 //table.Insert(o);
-                SendEmail(viewModel);
-                return RedirectToAction("ThankYou", "Home");
+                try
+                {
+                    SendEmail(viewModel);
+                }
+                catch
+                {
+                }
+                return RedirectToAction("Contact", "Home");
+
             }
             ModelState.AddModelError(string.Empty, "Oops,  " + string.Join(" ; ", ModelState.Values.SelectMany(x => x.Errors).Select(x => x.ErrorMessage)));
             return View(viewModel);
