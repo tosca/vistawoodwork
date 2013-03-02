@@ -13,9 +13,10 @@ namespace Web.Controllers
 {
     public class HomeController : Controller
     {
-        public FileResult Index()
+        public ActionResult Index()
         {
-            return File("index.html", "text/html");
+            return RedirectToAction("Contact", "Home");
+            //return File("index.html", "text/html");
         }
 
         public ActionResult About()

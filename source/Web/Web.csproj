@@ -257,7 +257,6 @@
     <Content Include="assets\icons.png" />
     <Content Include="assets\loader.gif" />
     <Content Include="assets\photoswipe.css" />
-    <Content Include="index.html" />
     <Content Include="img\distinquish02.png" />
     <Content Include="img\vistaLogoweb21.png" />
     <Content Include="lib\cache.class.js" />
