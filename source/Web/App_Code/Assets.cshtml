@@ -1,0 +1,39 @@
+﻿@helper CSS(string cssFile, string media= "screen"){
+    <link rel="stylesheet" href="/public/stylesheets/@cssFile" type="text/css" media="@media" /> 
+}
+@helper Image(string imageFile, int width = -1, int height = -1) {
+    var widthText = (width < 0) ? "" : string.Format("width={0}", width);
+    var heightText = (height < 0) ? "" : string.Format("height={0}", height);
+    <img src = "/public/images/@imageFile"  @widthText @heightText />
+}
+@helper PdfLink(string pdfFile, string linkText) {
+    <a href="/public/pdf/@pdfFile" target="_blank" >@linkText</a>
+}
+@helper ImageLink(string link, string imageFile) {
+    <a href="@link">
+        @Assets.Image(imageFile)
+    </a>
+}
+@helper Templates(){
+    <script type = "text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+}
+@helper Backbone(){
+    @Assets.Script("underscore-min.js")
+    @Assets.Script("backbone-min.js")
+}
+@helper Script(string scriptFile) {
+    <script type="text/javascript" src="/public/javascripts/@scriptFile"></script>
+}
+@helper jQuery(string use = "Google") {
+    if (use == "local") {
+        <script src="/Public/javascripts/jquery-1.6.1.min.js" type="text/javascript"></script>
+        <script src="/Public/javascripts/jquery-ui-1.8.11.min.js" type="text/javascript"></script> 
+    } else if (use == "aspnet") {
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.1.js" type="text/javascript"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/jquery-ui.js" type="text/javascript"></script>
+    }
+    else  {
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js" type="text/javascript"></script>
+    } 
+ }

@@ -142,6 +142,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\Flash.cshtml.txt" />
     <Content Include="code.photoswipe-3.0.5.js" />
     <Content Include="code.photoswipe-3.0.5.min.js" />
     <Content Include="code.photoswipe.jquery-3.0.5.js" />
@@ -452,6 +453,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PRISTINA_1.TTF" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\Assets.cshtml" />
+    <Content Include="App_Code\Form.cshtml" />
+    <Content Include="App_Code\List.cshtml" />
+    <Content Include="App_Code\Template.cshtml" />
+    <Content Include="App_Code\Templates.cshtml" />
+    <Content Include="App_Code\URL.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\ThankYou.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

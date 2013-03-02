@@ -8,43 +8,23 @@
 </hgroup>
 
 <section class="contact">
-    <header>
-        <h3>Phone:</h3>
-    </header>
-    <p>
-        <span class="label">Main:</span>
-        <span>425.555.0100</span>
-    </p>
-    <p>
-        <span class="label">After Hours:</span>
-        <span>425.555.0199</span>
-    </p>
-</section>
 
-<section class="contact">
-    <header>
-        <h3>Email:</h3>
-    </header>
-    <p>
-        <span class="label">Support:</span>
-        <span><a href="mailto:Support@example.com">Support@example.com</a></span>
-    </p>
-    <p>
-        <span class="label">Marketing:</span>
-        <span><a href="mailto:Marketing@example.com">Marketing@example.com</a></span>
-    </p>
-    <p>
-        <span class="label">General:</span>
-        <span><a href="mailto:General@example.com">General@example.com</a></span>
-    </p>
-</section>
+    <div>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()         
+            @Form.TextBoxRequired(name: "Company", value: Model.Company, maxLength:100)   
+            @Form.TextBoxRequired(name: "Name", value: Model.Name)   
+            @Form.TextBoxRequired(name: "Address1", value: Model.Address1)   
+            @Form.TextBoxRequired(name: "City", value: Model.City)   
+            @Form.TextBoxRequired(name: "State", value: Model.State, maxLength: 15)   
+            @Form.TextBoxRequired(name: "Phone", value: Model.Phone, maxLength: 15)   
+            @Form.TextBoxRequired(name: "Email", value: Model.Email)   
+            @Form.TextArea(name: "Comment", value: Model.Comment)   
+            @Form.Submit(value: "Submit")
+            @Html.ValidationSummary(true)  
+        } 
+    </div>
 
-<section class="contact">
-    <header>
-        <h3>Address:</h3>
-    </header>
-    <p>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399
-    </p>
+
 </section>
