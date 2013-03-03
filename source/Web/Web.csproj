@@ -151,10 +151,29 @@
     <Content Include="error.gif" />
     <Content Include="icons%402x.png" />
     <Content Include="icons.png" />
+    <Content Include="img\custom\Vista_Custom_1.jpg" />
     <Content Include="img\custom\Vista_Custom_10.jpg" />
     <Content Include="img\custom\Vista_Custom_11.jpg" />
     <Content Include="img\custom\Vista_Custom_12.jpg" />
     <Content Include="img\custom\Vista_Custom_13.jpg" />
+    <Content Include="img\custom\Vista_Custom_14.jpg" />
+    <Content Include="img\custom\Vista_Custom_15.jpg" />
+    <Content Include="img\custom\Vista_Custom_2.jpg" />
+    <Content Include="img\custom\Vista_Custom_20.jpg" />
+    <Content Include="img\custom\Vista_Custom_21.jpg" />
+    <Content Include="img\custom\Vista_Custom_22.jpg" />
+    <Content Include="img\custom\Vista_Custom_3.jpg" />
+    <Content Include="img\custom\Vista_Custom_30.jpg" />
+    <Content Include="img\custom\Vista_Custom_4.jpg" />
+    <Content Include="img\custom\Vista_Custom_40.jpg" />
+    <Content Include="img\custom\Vista_Custom_5.jpg" />
+    <Content Include="img\custom\Vista_Custom_51.jpg" />
+    <Content Include="img\custom\Vista_Custom_6.jpg" />
+    <Content Include="img\custom\Vista_Custom_6b.jpg" />
+    <Content Include="img\custom\Vista_Custom_7.jpg" />
+    <Content Include="img\custom\Vista_Custom_8.jpg" />
+    <Content Include="img\custom\Vista_Custom_9.jpg" />
+    <Content Include="img\custom\Vista_Custom_90.jpg" />
     <Content Include="img\door\Vista_Door_01.jpg" />
     <Content Include="img\door\Vista_Door_02.jpg" />
     <Content Include="img\door\Vista_Door_03.jpg" />
@@ -180,7 +199,7 @@
     <Content Include="img\Entertainment\Vista_TVcenter_02.jpg" />
     <Content Include="img\Entertainment\Vista_TVcenter_03.jpg" />
     <Content Include="img\Entertainment\Vista_TVcenter_04.jpg" />
-    <Content Include="img\Entertainment\Vista_WIne_Cellar_01jpg.jpg" />
+    <Content Include="img\Entertainment\Vista_Wine_Cellar_01.jpg" />
     <Content Include="img\fireplace\Vista_Mantel-01.jpg" />
     <Content Include="img\fireplace\Vista_Mantel-02.jpg" />
     <Content Include="img\fireplace\Vista_Mantel-03.jpg" />
@@ -295,8 +314,6 @@
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="img\3.jpg" />
-    <Content Include="img\4.jpg" />
     <Content Include="img\bath\DSC03617.jpg" />
     <Content Include="img\bath\DSC03618.jpg" />
     <Content Include="img\bath\DSC03619.jpg" />
@@ -428,7 +445,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="img\kit\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
