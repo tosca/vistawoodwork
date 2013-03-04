@@ -8,7 +8,6 @@
     width: 100%;
     margin-right: 0;
     margin-left: 0; 
-      
 }
 
 .detailimage img {
@@ -84,7 +83,7 @@ h2 {
 }
 @font-face
 {
-    font-family: "MyFirstFont";
+    font-family: MyFirstFont;
     src: url('Cicle Gordita_0.eot'); 
     src: url('Cicle Gordita_0.eot') format('embedded-opentype'), 
          url('Cicle Gordita_0.ttf') format('truetype'),
@@ -97,7 +96,7 @@ h2 {
 }
 @font-face
 {
-font-family: "MyFancyFont";
+font-family: MyFancyFont;
 src: url('PRISTINA_1.eot') format('embedded-opentype');
 src: url('PRISTINA_1.ttf') format('truetype'),  
     url('PRISTINA_1.woff') format('woff'),
@@ -106,7 +105,3 @@ src: url('PRISTINA_1.ttf') format('truetype'),
     font-style: normal;
     font-stretch: expanded;
 }
-
-
-
-    
