@@ -5,18 +5,18 @@
 }
 
 .detailimage {
-    width: 100%;
+   /* width: 100%;*/
     margin-right: 0;
     margin-left: 0; 
 }
 
 .detailimage img {
-    width: auto;
+   /* width: auto;*/
     height:auto;
 }
 
 .ui-li-listview .ui-btn{
-    width: 100%;
+   /* width: 100%;*/
 }
 .ui-li-thumb {
     left: 15px;
@@ -30,7 +30,7 @@
 }
 
 .ui-li-heading, .ui-li-desc{
-    margin: 0 0 0.5em;
+    margin: 0 0 0.6em;
     font-weight: normal;
 }
 .ui-li-heading {
