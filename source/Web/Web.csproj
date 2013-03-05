@@ -256,7 +256,13 @@
     <Content Include="img\kitchen\Vista_kitchen_15.jpg" />
     <Content Include="img\kitchen\Vista_kitchen_16.jpg" />
     <Content Include="img\kitchen\Vista_kitchen_17.jpg" />
+    <Content Include="img\kitchen\Vista_kitchen_17b.jpg" />
     <Content Include="img\kitchen\Vista_kitchen_18.jpg" />
+    <Content Include="img\kitchen\Vista_kitchen_18b.jpg" />
+    <Content Include="img\kitchen\Vista_kitchen_19.jpg" />
+    <Content Include="img\kitchen\Vista_kitchen_19a.jpg" />
+    <Content Include="img\kitchen\Vista_kitchen_19b.jpg" />
+    <Content Include="img\kitchen\Vista_kitchen_19c.jpg" />
     <Content Include="img\kitchen\Vista_kitchen_20.jpg" />
     <Content Include="img\kitchen\Vista_kitchen_21.jpg" />
     <Content Include="img\kitchen\Vista_kitchen_22.jpg" />
@@ -304,6 +310,7 @@
     <Content Include="img\thumb\th-kit-1.jpg" />
     <Content Include="img\thumb\th-kit-2.jpg" />
     <Content Include="img\thumb\th-millwork.jpg" />
+    <Content Include="img\vistaLogoSm.png" />
     <Content Include="img\vistaLogoweb22.png" />
     <Content Include="loader.gif" />
     <Content Include="MIT-license.txt" />
