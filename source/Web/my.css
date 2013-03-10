@@ -14,25 +14,36 @@
    /* width: auto;*/
     height:auto;
 }
-
+.ui-controlgroup, fieldset.ui-controlgroup {
+    margin:auto;
+}
+.ui-corner-left {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.ui-corner-right {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
 .ui-li-listview .ui-btn{
-   /* width: 100%;*/
+  /* width: 100%;*/
+  max-width:320px;
 }
 .ui-li-thumb {
     left: 0px;
-    max-height: 223px;
-    max-width: 330px;
+ max-height: 223px;
+    max-width: 320px;
     top: 44px;
     position:absolute;
 }
 
 .ui-btn .ui-listview {
     min-height: 209px;
-    max-width: 330px;
+    max-width: 320px;
 }
 .ui-li-listview {
-     max-width: 330px;
-     margin:10px;
+     max-width: 320px;
+     margin:0;
 }
 
 .ui-li-heading, .ui-li-desc{
@@ -55,8 +66,8 @@
     color: #722b00;
 }
 .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb {
-    min-height: 267px;
-    min-width: 330px;
+    min-height: 261px;
+    min-width: 320px;
     padding-left: 0;
 }
 .ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
