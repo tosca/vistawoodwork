@@ -200,6 +200,7 @@
     <Content Include="img\custom\Vista_Custom_51.jpg" />
     <Content Include="img\custom\Vista_Custom_6.jpg" />
     <Content Include="img\custom\Vista_Custom_6b.jpg" />
+    <Content Include="img\custom\Vista_Custom_6c.jpg" />
     <Content Include="img\custom\Vista_Custom_7.jpg" />
     <Content Include="img\custom\Vista_Custom_8.jpg" />
     <Content Include="img\custom\Vista_Custom_9.jpg" />
@@ -243,6 +244,9 @@
     <Content Include="img\fireplace\Vista_Mantel-10.jpg" />
     <Content Include="img\fireplace\Vista_Mantel-11.jpg" />
     <Content Include="img\fireplace\Vista_Mantel-12.jpg" />
+    <Content Include="img\fireplace\Vista_Mantel-13.jpg" />
+    <Content Include="img\fireplace\Vista_Mantel-14.jpg" />
+    <Content Include="img\fireplace\Vista_Mantel-15.jpg" />
     <Content Include="img\kitchen\Vista_kitchen_01.jpg" />
     <Content Include="img\kitchen\Vista_kitchen_02.jpg" />
     <Content Include="img\kitchen\Vista_kitchen_03.jpg" />
@@ -251,6 +255,7 @@
     <Content Include="img\kitchen\Vista_kitchen_06.jpg" />
     <Content Include="img\kitchen\Vista_kitchen_10.jpg" />
     <Content Include="img\kitchen\Vista_kitchen_11.jpg" />
+    <Content Include="img\kitchen\Vista_kitchen_11b.jpg" />
     <Content Include="img\kitchen\Vista_kitchen_12.jpg" />
     <Content Include="img\kitchen\Vista_kitchen_13.jpg" />
     <Content Include="img\kitchen\Vista_kitchen_14.jpg" />
@@ -269,6 +274,12 @@
     <Content Include="img\kitchen\Vista_kitchen_22.jpg" />
     <Content Include="img\kitchen\Vista_kitchen_23.jpg" />
     <Content Include="img\kitchen\Vista_kitchen_24.jpg" />
+    <Content Include="img\kitchen\Vista_kitchen_30.jpg" />
+    <Content Include="img\kitchen\Vista_kitchen_31.jpg" />
+    <Content Include="img\kitchen\Vista_kitchen_32.jpg" />
+    <Content Include="img\kitchen\Vista_kitchen_33.jpg" />
+    <Content Include="img\kitchen\Vista_kitchen_34.jpg" />
+    <Content Include="img\kitchen\Vista_kitchen_35.jpg" />
     <Content Include="img\millwork\Vista_Millwork_01.jpg" />
     <Content Include="img\millwork\Vista_Millwork_02.jpg" />
     <Content Include="img\millwork\Vista_Millwork_03.jpg" />
