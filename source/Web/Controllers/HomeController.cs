@@ -15,8 +15,8 @@ namespace Web.Controllers
     {
         public ActionResult Index()
         {
-            return RedirectToAction("Contact", "Home");
-            //return File("index.html", "text/html");
+          //  return RedirectToAction("Contact", "Home");
+            return File("index.html", "text/html");
         }
 
         public ActionResult About()
@@ -76,7 +76,7 @@ namespace Web.Controllers
                 catch
                 {
                 }
-                return RedirectToAction("Contact", "Home");
+             //   return RedirectToAction("Contact", "Home");
 
             }
             ModelState.AddModelError(string.Empty, "Oops,  " + string.Join(" ; ", ModelState.Values.SelectMany(x => x.Errors).Select(x => x.ErrorMessage)));
